@@ -1,0 +1,12 @@
+Material Class,Material Formula,Sintering Temp (C),Heating Time,Precursors,DOI,Notes
+Spinel,MgAl2O4,1400,2 h,"MgO, Al2O3",10.1021/acsomega.3c04782,Precursors mixed as MgO-Al2O3 composite particles via electrostatic adsorption (ESA); conventional simple mixing requires 1600°C to reach single phase
+Spinel,MgAl2O4,1500-1600,inaccessible,"MgO, Al2O3",10.1016/j.jmrt.2023.06.044,Stoichiometric composition shows optimal densification and best mechanical performance
+Spinel,MgAl2O4,1000-1200,1 h,"Al(OH)3, MgCO3·5H2O",10.1016/j.powtec.2014.08.003,Requires 6-10 h planetary ball milling prior to annealing; nanostructured product ~35 nm crystallite size; precursors are gibbsite and lansfordite
+Spinel,MgAl2O4,1300,30 min,"Al2O3, MgO",10.1016/j.jics.2023.100989,Spark plasma sintering (SPS); nano-oxide precursors sonicated before consolidation; fully dense product without sintering aids
+Spinel,MgGa2O4,1410,inaccessible,"MgO, Ga2O3",10.1016/j.ceramint.2024.12.284,Base sintering temp reported in context of LiF-addition study for LTCC; LiF addition reduces temp to 850°C
+Spinel,MgGa2O4,1610,inaccessible,"MgO, Ga2O3",10.1007/s11664-024-10928-x,Reaction sintering method; microwave dielectric characterization (εr=9.4; Q×f=167500 GHz)
+Spinel,MgIn2O4,1400,inaccessible,"MgO, In2O3",10.1002/smtd.202400715,Sintered in O2 atmosphere; spinel phase confirmed as exclusive In-containing phase by XRD and TEM
+Spinel,ZnAl2O4,1550,inaccessible,"ZnO, Bauxite",10.1016/j.ceramint.2024.07.336,Bauxite used as Al2O3 source (industrial impure form); optimal 1:1 mass ratio with 5 h milling
+Spinel,ZnAl2O4,"1050, 1700",inaccessible,"ZnO, Al2O3",10.1016/j.jeurceramsoc.2022.06.058,Two-stage firing at 1050°C then 1700°C; industrial reactive Al2O3 precursor; produces dense refractory aggregates with 0% open porosity
+Spinel,ZnGa2O4,1200,inaccessible,"Zn, Ga",10.1016/j.jallcom.2012.08.137,Metallic Zn and Ga precursors mixed/milled in H2O prior to thermal treatment (not typical oxide-oxide route)
+Spinel,ZnGa2O4,1550,inaccessible,"ZnO, Ga2O3",10.1007/s11664-024-10928-x,Reaction sintering method; same study as MgGa2O4 entry; microwave dielectric characterization (εr=10.5; Q×f=126900 GHz)
