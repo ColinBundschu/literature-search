@@ -20,7 +20,7 @@
 Work through `synthesis_recipes_queue.csv` **one composition at a time — no batching**:
 1. Take the next composition from the top of the queue
 2. Search for solid-state synthesis recipes
-3. If found → add row(s) to `synthesis_recipes.csv`; if not found → add row to `synthesis_recipes_not_found.csv`
+3. If found → add row(s) to `synthesis_recipes.csv` — **each paper gets its own row** (do not merge data from multiple papers into one row); if not found → add row to `synthesis_recipes_not_found.csv`
 4. Remove the composition from the queue
 5. Repeat
 
