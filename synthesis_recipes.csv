@@ -37,3 +37,6 @@ Pyrochlore,La2Zr2O7,inaccessible,inaccessible,"La2O3, ZrO2",10.1016/j.ceramint.2
 Pyrochlore,La2Hf2O7,1600,6 h,"La2O3, HfO2",10.1016/j.jlumin.2012.10.034,"Air (also tested 10% O2/Ar and 3% H2/Ar); alumina crucibles; 1400°C and 1650°C also studied but 1650°C in air causes partial melting; particle size 5–20 µm"
 Pyrochlore,La2Hf2O7,1600,10 h,"La2O3, HfO2",10.3390/app12094342,"Air; 650 MPa uniaxial pressing; ball-milled for homogenization; >92% theoretical density; open-access"
 Pyrochlore,La2Hf2O7,1500,10 h,"La2O3, HfO2",10.1016/j.ceramint.2017.11.146,"Air (muffle furnace); ball-milled; solid-state confirmed; full details paywalled; hot corrosion study"
+Pyrochlore,La2Sn2O7,1200,4 h,"La2O3, SnO2",10.1016/j.jpcs.2022.111205,"Calcination step; precursors air-dried at 120°C before firing; A2Sn2O7 series study (A = La, Nd, Sm, Gd); NTC thermistor application"
+Pyrochlore,La2Sn2O7,1350,inaccessible,"La2O3, SnO2",10.1016/j.jeurceramsoc.2023.09.062,"Optimal sintering temp for density and microwave dielectric properties; dwell time and atmosphere paywalled; high purity precursors (99.5%)"
+Pyrochlore,La2Sn2O7,1400,48 h,"La2O3, SnO2",10.1021/acs.jpcc.6b06962,"Open access; 5 K/min ramp; 16 h ball milling in isopropanol with ZrO2 media before firing; uniaxially pressed pellets; La2(Sn,Ti)2O7 series including x=0 end-member"
