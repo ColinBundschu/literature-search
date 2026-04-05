@@ -21,6 +21,7 @@ Work through `synthesis_recipes_queue.csv` **one composition at a time — no ba
 1. Take the next composition from the top of the queue
 2. Search for solid-state synthesis recipes
 3. If found → add row(s) to `synthesis_recipes.csv` — **each paper gets its own row** (do not merge data from multiple papers into one row); if not found → add row to `synthesis_recipes_not_found.csv`
+   - **If the compound does not adopt the presumed structure type** (e.g., listed as Pyrochlore but forms a triclinic or tetragonal phase instead): do NOT add to `synthesis_recipes.csv`; add a single row to `synthesis_recipes_not_found.csv` with an explanation in the Notes field — include why it cannot be treated as the target structure (e.g., different space group, different disorder mechanism), and cite any relevant DOIs within the Notes field
 4. Remove the composition from the queue
 5. Repeat
 
