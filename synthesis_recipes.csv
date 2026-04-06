@@ -104,3 +104,7 @@ Double Perovskite,Sr2YSbO6,1400,6 h,"SrCO3, Y2O3, Sb2O5",10.1016/j.cej.2021.1286
 Double Perovskite,Sr2YSbO6,inaccessible,inaccessible,inaccessible,10.1007/s10853-010-4794-8,"Solid-state reaction; buffer layer for YBCO superconducting films; specific parameters paywalled"
 Double Perovskite,Sr2YSbO6,inaccessible,inaccessible,inaccessible,10.1016/j.physb.2007.04.077,"DFT + experimental study; solid-state reaction confirmed; specific parameters paywalled"
 Double Perovskite,Sr2YSbO6,inaccessible,inaccessible,inaccessible,10.1016/j.mtchem.2021.100744,"Solid-state reaction; Li+/Mn4+ co-doped red phosphor; specific parameters paywalled"
+Double Perovskite,Sr2LuNbO6,"750; 950; 1200; 1250","overnight; 2 d; 2 d; 2 d","SrCO3, Lu2O3, Nb2O5",10.1017/S0885715618000593,"Multi-step solid-state: 750°C overnight then 950°C/2 d then 1200°C/2 d then 1250°C/2 d; intermediate grindings; furnace-cooled; air; Sr2RNbO6 series (R=Sm/Gd/Dy/Ho/Y/Tm/Lu)"
+Double Perovskite,Sr2LuNbO6,inaccessible,inaccessible,inaccessible,10.1039/C4DT01337A,"Solid-state implied; Sr2-yLuNb1-xTixO6-delta series; monoclinic P21/n; specific parameters paywalled"
+Double Perovskite,Sr2LuNbO6,inaccessible,inaccessible,inaccessible,10.1021/acsami.3c03897,"High-temperature solid-state; Mn4+-doped multifunctional phosphor; specific parameters paywalled"
+Double Perovskite,Sr2LuNbO6,inaccessible,inaccessible,inaccessible,10.1007/s40843-023-2782-6,"Molten salt solid-phase method (not conventional solid-state); Mn4+-doped deep-red phosphor; specific parameters paywalled"
