@@ -24,3 +24,5 @@ Double Perovskite,Ba2GaNbO6,No solid-state synthesis papers found; only computat
 Double Perovskite,Ba2GaTaO6,No papers found at all; compound does not appear in indexed literature
 Double Perovskite,Ba2GaSbO6,No solid-state synthesis papers found; only computational/DFT studies exist (e.g. 10.1016/j.mtcomm.2023.105617)
 Double Perovskite,Ba2ScTaO6,No solid-state synthesis papers found; compound referenced only in computational contexts; Sr and Ca analogues exist experimentally
+Double Perovskite,Ca2MgMoO6,No solid-state synthesis papers found; only computational studies exist; tungstate analog Ca2MgWO6 and Sr2MgMoO6 are experimentally known but Ca+Mo end-member has not been reported
+Double Perovskite,Ca2CaMoO6,No synthesis papers found; Ca3MoO6 does not appear in accessible literature; may not be a thermodynamically stable phase (unlike Ca3WO6 which is well-studied)
