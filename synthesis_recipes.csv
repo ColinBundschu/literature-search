@@ -138,3 +138,8 @@ Double Perovskite,Ba2YTaO6,inaccessible,inaccessible,"BaCO3, Y2O3, Ta2O5",10.101
 Double Perovskite,Ba2YTaO6,inaccessible,inaccessible,"BaCO3, Y2O3, Ta2O5",10.1016/j.inoche.2021.108568,"Flux-assisted solid-state; LiF flux (7-11 mol%); Mn4+-doped phosphor; specific parameters paywalled"
 Double Perovskite,Ba2YTaO6,inaccessible,inaccessible,inaccessible,10.1007/s11664-019-07306-3,"Solid-state reaction; Eu3+-doped red phosphor; cubic Fm-3m; specific parameters paywalled"
 Double Perovskite,Ba2YTaO6,1200-1400,inaccessible,"BaCO3, Y2O3, Ta2O5",10.1016/j.jssc.2010.12.011,"Multi-step grinding/resintering; structural/phase transition study; prolonged heating over many days for cation ordering; specific schedule paywalled"
+Double Perovskite,Ba2YSbO6,inaccessible,inaccessible,"BaCO3, Y2O3, Sb2O3",10.1016/j.ceramint.2022.09.281,"Solid-state reaction; ambient conditions; Mn4+-doped phosphor; precursors confirmed from snippet (note Sb2O3 not Sb2O5); specific temp/time paywalled"
+Double Perovskite,Ba2LuNbO6,1400,6 h,"BaCO3, Lu2O3, Nb2O5",10.1016/j.jre.2021.06.006,"High-temperature solid-state reaction; blended in anhydrous ethanol; Eu3+-doped phosphor; air"
+Double Perovskite,Ba2LuNbO6,inaccessible,inaccessible,"BaCO3, Lu2O3, Nb2O5",10.1016/j.mtcomm.2022.104817,"Solid-state method; air atmosphere; Mn4+-doped phosphor; specific temp/time paywalled"
+Double Perovskite,Ba2LuNbO6,inaccessible,inaccessible,inaccessible,10.1039/D2TC00585A,"Solid-state method; Bi3+-doped X-ray scintillator; specific parameters paywalled"
+Double Perovskite,Ba2LuNbO6,inaccessible,inaccessible,inaccessible,10.1111/jace.20058,"Solid-state reaction; Er3+/Yb3+ upconversion thermometry; specific parameters paywalled"
