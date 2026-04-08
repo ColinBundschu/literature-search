@@ -25,6 +25,30 @@ Work through `synthesis_recipes_queue.csv` **one composition at a time — no ba
 4. Remove the composition from the queue
 5. Repeat
 
+## Viability Assessment for Not-Found Compounds
+Every entry added to `synthesis_recipes_not_found.csv` **must** be rigorously assessed for viability. Do not simply record "no papers found" — determine *why* it wasn't found. The Notes field must reflect one of the following assessments:
+
+1. **Does the compound form the target structure type at all?**
+   - Calculate the relevant stability metric (tolerance factor for perovskites, radius ratios for pyrochlores, garnet tolerance factor for garnets, etc.)
+   - Compare against confirmed compounds with similar metrics
+   - Check if the compound adopts a different structure instead (e.g., perovskite instead of ilmenite, defect fluorite instead of pyrochlore, simple perovskite instead of double perovskite)
+
+2. **Has it been synthesized by any method (not just solid-state)?**
+   - Search for hydrothermal, sol-gel, coprecipitation, high-pressure, melt growth, etc.
+   - If a non-SS route exists, note it — the compound is real but just not SS-accessible
+
+3. **Is it likely feasible but simply unattempted?**
+   - Check if close analogues exist (same structure with neighboring elements)
+   - Verify the tolerance factor / radius ratio falls within the confirmed stability window
+   - Note the specific analogues that support feasibility
+
+4. **Is it physically impossible?**
+   - Cite the specific structural/chemical reason (ion too large/small, charge balance issue, redox instability, etc.)
+   - Reference confirmed compounds that bracket the stability boundary
+   - Include tolerance factor or radius ratio calculations where applicable
+
+The Notes field should include enough reasoning and citations that the classification can be independently verified.
+
 For double perovskites, search both B'-B'' orderings (e.g. Sr2AlTaO6 and Sr2TaAlO6) — record under one consistent format.
 
 ---
@@ -65,5 +89,8 @@ https://next-gen.materialsproject.org/materials/mp-6008
 Replace Ca with A, Al with B, and Si with C
 Exclude B = C
 
-Category 1 (Silicate-type) — A: (Ca, Mg, Sr, Ba) / B: (Al, Ga, Sc) / C: (Si, Ge)
-Category 2 (Rare Earth) — A: (Y, La, Lu) / B/C: pick two from (Al, Ga, Sc)
+Category 1 (A²⁺, B³⁺, C⁴⁺) — A: (Ca, Sr) / B: (Al, Ga, Sc, In, Y) / C: (Si, Ge)
+Category 2 (A³⁺, B³⁺, C³⁺) — A: (Y, La, Lu) / B (octahedral): (Al, Ga, Sc, In) / C (tetrahedral): (Al, Ga)
+Note: Sc³⁺ and In³⁺ are too large for the tetrahedral C-site; they can only occupy the octahedral B-site. The B and C sites are NOT interchangeable — A₃B₂C₃O₁₂ with B on octahedral and C on tetrahedral is a different compound from the reversed assignment.
+
+Note: Mg and Ba A-site garnets were investigated and found to be non-viable (Mg²⁺ too small, Ba²⁺ too large for dodecahedral site). They remain in the CSVs for completeness but are omitted from the plot.

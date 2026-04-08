@@ -20,12 +20,12 @@ from collections import defaultdict
 # 6: Not physically possible
 
 CAT_COLORS = {
-    0: "#d9d9d9",   # light gray
-    1: "#2ca02c",   # green
-    2: "#4db6ac",   # blue-green / teal
-    3: "#ff9f43",   # orange (merged non-SS + HP)
-    5: "#fdd835",   # yellow (disordered solid solution)
-    7: "#ab47bc",   # red-purple (different phase entirely)
+    0: "#ffffff",   # white (in queue, not yet searched)
+    1: "#2ca02c",   # green (SS synthesis found)
+    2: "#c5e17a",   # yellow-green (not found, feasible)
+    3: "#fdd835",   # yellow (non-SS / high-pressure only)
+    5: "#4db6ac",   # teal (disordered solid solution)
+    7: "#ff9f43",   # orange (prefers different phase)
     6: "#e53935",   # red (not physically possible)
 }
 
@@ -85,6 +85,16 @@ def parse_not_found(path):
                 "si4+ tetrahedral framework too small",
                 "si4+ gives too tight a framework",
                 "severe tolerance factor mismatch",
+                "too large for octahedral site in mg oxide spinel",  # MgSc2O4
+                "too large for octahedral site in zn oxide spinel",  # ZnSc2O4
+                "still too small on octahedral site for sr",  # Sr3Ga2Ge3O12
+                "al3+ far too small on octahedral site for sr",  # Sr3Al2Ge3O12
+                "too small for stable octahedral coordination",  # Bi Ge compounds
+                "too large for b-site when paired with",  # Bi Ca non-Ti compounds
+                "does not form perovskite; ce4+",  # Bi Ce compounds
+                "no bi(ca0.5x)o3 reported",  # Bi Ca compounds
+                "too large for b-site with ce4+",  # Bi2CaCeO6
+                "no bi(b0.5ge0.5)o3 reported",  # Bi Ge compounds
             ]):
                 results[key] = 6
                 continue
@@ -121,12 +131,15 @@ def parse_not_found(path):
                 continue
 
             # =================================================================
-            # Bi-based double perovskites → they form simple perovskite, not DP
-            # This is a fundamentally different phase (not just disordering)
+            # Bi-based double perovskites → disordered simple perovskite
+            # High-pressure or metastable ones → category 3; rest → category 5
             # =================================================================
             if key[0] == "Double Perovskite" and formula.startswith("Bi2"):
+                if "high-pressure" in nl or "metastable" in nl or "high pressure" in nl:
+                    results[key] = 3
+                    continue
                 if "does not adopt" in nl or "forms simple perovskite" in nl:
-                    results[key] = 7
+                    results[key] = 5
                     continue
 
             # =================================================================
@@ -246,12 +259,14 @@ def draw_grid(ax, row_labels, col_labels, data, title, row_axis_label="", col_ax
     for i in range(nrows):
         for j in range(ncols):
             val = data[i][j]
-            if val == -1:
+            if val == -2:
+                continue  # skip N/A cells entirely (upper/lower triangle)
+            elif val == -3:
+                color = "#d9d9d9"  # solid light gray (B=C diagonal)
+                hatch = None
+            elif val == -1:
                 color = "white"
                 hatch = "///"
-            elif val == -2:
-                color = "#f0f0f0"
-                hatch = "xxx"
             else:
                 color = CAT_COLORS.get(val, "white")
                 hatch = None
@@ -270,16 +285,16 @@ def draw_grid(ax, row_labels, col_labels, data, title, row_axis_label="", col_ax
     ax.set_xlim(0, ncols)
     ax.set_ylim(0, nrows)
     ax.set_xticks([x + 0.5 for x in range(ncols)])
-    ax.set_xticklabels(col_labels, fontsize=9, fontweight='bold')
+    ax.set_xticklabels(col_labels, fontsize=18, fontweight='bold')
     ax.set_yticks([y + 0.5 for y in range(nrows)])
-    ax.set_yticklabels(row_labels[::-1], fontsize=9, fontweight='bold')
+    ax.set_yticklabels(row_labels[::-1], fontsize=18, fontweight='bold')
     ax.set_aspect('equal')
-    ax.set_title(title, fontsize=9.5, fontweight='bold', pad=4)
+    ax.set_title(title, fontsize=19, fontweight='bold', pad=8)
 
     if col_axis_label:
-        ax.set_xlabel(col_axis_label, fontsize=8, style='italic')
+        ax.set_xlabel(col_axis_label, fontsize=16, style='italic')
     if row_axis_label:
-        ax.set_ylabel(row_axis_label, fontsize=8, style='italic')
+        ax.set_ylabel(row_axis_label, fontsize=16, style='italic')
 
     ax.tick_params(length=0)
     for spine in ax.spines.values():
@@ -296,38 +311,39 @@ def main():
     # Define all material classes and their grids
     # =========================================================================
     spinel_A = ["Mg", "Zn"]
-    spinel_B = ["Al", "Ga", "In", "Sc"]
+    spinel_B = ["Al", "Ga", "In"]
 
-    dp1_A = ["Ca", "Sr", "Ba"]
+    dp1_A = ["Ca", "Sr", "Ba", "Pb"]
     dp1_Bp = ["Al", "Ga", "Sc", "In", "Y", "Lu"]
-    dp1_Bpp = ["Nb", "Ta", "Sb"]
+    dp1_Bpp = ["Nb", "Ta", "Sb", "Bi"]
 
-    dp2_A = ["Ca", "Sr", "Ba"]
+    dp2_A = ["Ca", "Sr", "Ba", "Pb"]
     dp2_Bp = ["Mg", "Ca", "Zn"]
-    dp2_Bpp = ["W", "Mo"]
+    dp2_Bpp = ["W", "Mo", "Te"]
 
     dp3_A = ["La", "Bi", "Y", "Lu"]
     dp3_Bp = ["Mg", "Ca", "Zn"]
-    dp3_Bpp = ["Ti", "Sn", "Zr", "Hf", "Ce", "Ge"]
+    dp3_Bpp = ["Ti", "Sn", "Zr", "Hf", "Ge"]
 
     dp4_A = ["Ca", "Sr", "Ba", "Pb"]
-    dp4_B = ["Ti", "Zr", "Hf", "Ce", "Sn"]
+    dp4_B = ["Ti", "Zr", "Hf", "Sn"]
 
-    ilm_A = ["Mg", "Zn", "Ca", "Sr", "Ba", "Pb"]
-    ilm_B = ["Ti", "Si", "Ge", "Sn", "Zr", "Hf", "Ce"]
+    ilm_A = ["Mg", "Zn"]
+    ilm_B = ["Ti", "Si", "Ge", "Sn"]
 
     pyro1_A = ["La", "Y", "Lu", "Bi"]
-    pyro1_B = ["Ti", "Zr", "Hf", "Sn", "Ge", "Ce"]
+    pyro1_B = ["Ti", "Zr", "Hf", "Sn"]
 
-    pyro2_A = ["Ca", "Sr", "Ba", "Pb"]
-    pyro2_B = ["Nb", "Ta"]
+    pyro2_A = ["Pb"]
+    pyro2_B = ["Nb", "Ta", "Sb"]
 
-    gar1_A = ["Ca", "Mg", "Sr", "Ba"]
-    gar1_B = ["Al", "Ga", "Sc"]
+    gar1_A = ["Ca", "Sr"]
+    gar1_B = ["Al", "Ga", "Sc", "In", "Y"]
     gar1_C = ["Si", "Ge"]
 
     gar2_A = ["Y", "La", "Lu"]
-    gar2_BC = ["Al", "Ga", "Sc"]
+    gar2_B = ["Al", "Ga", "Sc", "In"]  # octahedral — any 3+ cation
+    gar2_C = ["Al", "Ga"]               # tetrahedral — only small cations fit
 
     # =========================================================================
     # Formula builders
@@ -355,110 +371,17 @@ def main():
     # =========================================================================
     from matplotlib.gridspec import GridSpec
 
-    fig = plt.figure(figsize=(22, 30))
+    fig = plt.figure(figsize=(26, 28))
     fig.suptitle("Literature Search Results: Solid-State Synthesis of Oxide Ceramics",
-                 fontsize=16, fontweight='bold', y=0.99)
+                 fontsize=32, fontweight='bold', y=0.99)
 
-    # Height ratios tuned to grid row counts: spinel/ilm(6), pyro(4), dp1(6),
-    # dp2(3), dp3(3), dp4(5), garnet(3), legend space
-    gs = GridSpec(8, 12, figure=fig,
-                  height_ratios=[6, 4, 6, 3, 3, 5, 3, 0.8],
+    # Height ratios tuned to grid row counts
+    gs = GridSpec(7, 16, figure=fig,
+                  height_ratios=[0.8, 4, 6, 3, 3, 5, 5],
                   hspace=0.6, wspace=0.35,
-                  top=0.97, bottom=0.04, left=0.05, right=0.98)
+                  top=0.97, bottom=0.02, left=0.05, right=0.98)
 
-    # --- Row 0: Spinel (2x4) + Ilmenite (6x7) ---
-    ax = fig.add_subplot(gs[0, 0:3])
-    data = [[status("Spinel", make_formula_spinel(a, b)) for b in spinel_B] for a in spinel_A]
-    draw_grid(ax, spinel_A, spinel_B, data, "Spinel  AB$_2$O$_4$", "A site", "B site")
-
-    ax = fig.add_subplot(gs[0, 4:11])
-    data = [[status("Ilmenite", make_formula_ilmenite(a, b)) for b in ilm_B] for a in ilm_A]
-    draw_grid(ax, ilm_A, ilm_B, data, "Ilmenite  ABO$_3$", "A site", "B site")
-
-    # --- Row 1: Pyrochlore ---
-    ax = fig.add_subplot(gs[1, 0:5])
-    data = [[status("Pyrochlore", make_formula_pyrochlore(a, b)) for b in pyro1_B] for a in pyro1_A]
-    draw_grid(ax, pyro1_A, pyro1_B, data,
-              "Pyrochlore  A$_2$B$_2$O$_7$  (A$^{3+}$, B$^{4+}$)", "A site", "B site")
-
-    ax = fig.add_subplot(gs[1, 6:9])
-    data = [[status("Pyrochlore", make_formula_pyrochlore(a, b)) for b in pyro2_B] for a in pyro2_A]
-    draw_grid(ax, pyro2_A, pyro2_B, data,
-              "Pyrochlore  A$_2$B$_2$O$_7$  (A$^{2+}$, B$^{5+}$)", "A site", "B site")
-
-    # --- Row 2: Double Perovskite Cat 1 (3+/5+): 6x3 ---
-    for idx, a in enumerate(dp1_A):
-        ax = fig.add_subplot(gs[2, idx*4:(idx*4)+3])
-        data = [[status("Double Perovskite", make_formula_dp(a, bp, bpp))
-                 for bpp in dp1_Bpp] for bp in dp1_Bp]
-        draw_grid(ax, dp1_Bp, dp1_Bpp, data,
-                  f"Dbl. Perovskite  {a}$_2$B'B''O$_6$\n(B'$^{{3+}}$ / B''$^{{5+}}$)",
-                  "B' site", "B'' site")
-
-    # --- Row 3: Double Perovskite Cat 2 (2+/6+): 3x2 ---
-    for idx, a in enumerate(dp2_A):
-        ax = fig.add_subplot(gs[3, idx*3:(idx*3)+2])
-        data = [[status("Double Perovskite", make_formula_dp(a, bp, bpp))
-                 for bpp in dp2_Bpp] for bp in dp2_Bp]
-        draw_grid(ax, dp2_Bp, dp2_Bpp, data,
-                  f"Dbl. Perovskite  {a}$_2$B'B''O$_6$\n(B'$^{{2+}}$ / B''$^{{6+}}$)",
-                  "B' site", "B'' site")
-
-    # --- Row 4: Double Perovskite Cat 3 (2+/4+): 3x6 ---
-    for idx, a in enumerate(dp3_A):
-        ax = fig.add_subplot(gs[4, idx*3:(idx*3)+3])
-        data = [[status("Double Perovskite", make_formula_dp(a, bp, bpp))
-                 for bpp in dp3_Bpp] for bp in dp3_Bp]
-        draw_grid(ax, dp3_Bp, dp3_Bpp, data,
-                  f"Dbl. Perovskite  {a}$_2$B'B''O$_6$\n(B'$^{{2+}}$ / B''$^{{4+}}$)",
-                  "B' site", "B'' site")
-
-    # --- Row 5: Double Perovskite Cat 4 (4+/4+): 5x5 ---
-    for idx, a in enumerate(dp4_A):
-        ax = fig.add_subplot(gs[5, idx*3:(idx*3)+3])
-        data = []
-        for b1_idx, b1 in enumerate(dp4_B):
-            row = []
-            for b2_idx, b2 in enumerate(dp4_B):
-                if b1 == b2:
-                    row.append(-2)
-                elif b2_idx < b1_idx:
-                    row.append(-2)
-                else:
-                    row.append(status("Double Perovskite", make_formula_dp(a, b1, b2)))
-            data.append(row)
-        draw_grid(ax, dp4_B, dp4_B, data,
-                  f"Dbl. Perovskite  {a}$_2$B'B''O$_6$\n(B'$^{{4+}}$ / B''$^{{4+}}$)",
-                  "B' site", "B'' site")
-
-    # --- Row 6: Garnet ---
-    for idx, a in enumerate(gar1_A):
-        ax = fig.add_subplot(gs[6, idx*2:(idx*2)+2])
-        data = []
-        for b in gar1_B:
-            row = []
-            for c in gar1_C:
-                row.append(-2 if b == c else status("Garnet", make_formula_garnet(a, b, c)))
-            data.append(row)
-        draw_grid(ax, gar1_B, gar1_C, data,
-                  f"Garnet  {a}$_3$B$_2$C$_3$O$_{{12}}$\n(A$^{{2+}}$, B$^{{3+}}$, C$^{{4+}}$)",
-                  "B site", "C site")
-
-    for idx, a in enumerate(gar2_A):
-        ax = fig.add_subplot(gs[6, 8 + idx])
-        data = []
-        for b in gar2_BC:
-            row = []
-            for c in gar2_BC:
-                row.append(-2 if b == c else status("Garnet", make_formula_garnet(a, b, c)))
-            data.append(row)
-        draw_grid(ax, gar2_BC, gar2_BC, data,
-                  f"Garnet  {a}$_3$B$_2$C$_3$O$_{{12}}$\n(A$^{{3+}}$, B$^{{3+}}$, C$^{{3+}}$)",
-                  "B (oct.)", "C (tet.)")
-
-    # =========================================================================
-    # Legend in bottom row
-    # =========================================================================
+    # --- Row 0: Legend at top ---
     legend_patches = [
         mpatches.Patch(facecolor=CAT_COLORS[1], edgecolor='black', linewidth=1.2,
                        label='SS synthesis found'),
@@ -474,13 +397,116 @@ def main():
                        label='Not physically possible'),
         mpatches.Patch(facecolor=CAT_COLORS[0], edgecolor='black', linewidth=1.2,
                        label='In queue'),
-        mpatches.Patch(facecolor='#f0f0f0', edgecolor='black', hatch='xxx', linewidth=1.2,
-                       label='N/A'),
     ]
+    fig.legend(handles=legend_patches, loc='upper center', ncol=4,
+              fontsize=20, frameon=True, fancybox=True, shadow=True,
+              bbox_to_anchor=(0.5, 0.975))
 
-    fig.legend(handles=legend_patches, loc='lower center', ncol=4,
-              fontsize=10, frameon=True, fancybox=True, shadow=True,
-              bbox_to_anchor=(0.5, 0.005))
+    # --- Row 1: Spinel + Ilmenite + Pyrochlores ---
+    ax = fig.add_subplot(gs[1, 0:3])
+    data = [[status("Spinel", make_formula_spinel(a, b)) for b in spinel_B] for a in spinel_A]
+    draw_grid(ax, spinel_A, spinel_B, data, "Spinel  AB$_2$O$_4$", "A site", "B site")
+
+    ax = fig.add_subplot(gs[1, 4:8])
+    data = [[status("Ilmenite", make_formula_ilmenite(a, b)) for b in ilm_B] for a in ilm_A]
+    draw_grid(ax, ilm_A, ilm_B, data, "Ilmenite  ABO$_3$", "A site", "B site")
+
+    ax = fig.add_subplot(gs[1, 9:13])
+    data = [[status("Pyrochlore", make_formula_pyrochlore(a, b)) for b in pyro1_B] for a in pyro1_A]
+    draw_grid(ax, pyro1_A, pyro1_B, data,
+              "Pyrochlore  A$_2$B$_2$O$_7$\n(A$^{3+}$, B$^{4+}$)", "A site", "B site")
+
+    ax = fig.add_subplot(gs[1, 14:16])
+    data = [[status("Pyrochlore", make_formula_pyrochlore(a, b)) for b in pyro2_B] for a in pyro2_A]
+    draw_grid(ax, pyro2_A, pyro2_B, data,
+              "Pyrochlore  A$_2$B$_2$O$_7$\n(A$^{2+}$, B$^{5+}$)", "A site", "B site")
+
+    # --- Row 2: Double Perovskite Cat 1 (3+/5+): 6x4, 4 panels ---
+    for idx, a in enumerate(dp1_A):
+        ax = fig.add_subplot(gs[2, idx*4:(idx*4)+4])
+        data = [[status("Double Perovskite", make_formula_dp(a, bp, bpp))
+                 for bpp in dp1_Bpp] for bp in dp1_Bp]
+        draw_grid(ax, dp1_Bp, dp1_Bpp, data,
+                  f"Dbl. Perovskite  {a}$_2$B'B''O$_6$\n(B'$^{{3+}}$ / B''$^{{5+}}$)",
+                  "B' site", "B'' site")
+
+    # --- Row 4: Double Perovskite Cat 2 (2+/6+): 3x3, 4 panels ---
+    for idx, a in enumerate(dp2_A):
+        ax = fig.add_subplot(gs[3, idx*4:(idx*4)+3])
+        data = [[status("Double Perovskite", make_formula_dp(a, bp, bpp))
+                 for bpp in dp2_Bpp] for bp in dp2_Bp]
+        draw_grid(ax, dp2_Bp, dp2_Bpp, data,
+                  f"Dbl. Perovskite  {a}$_2$B'B''O$_6$\n(B'$^{{2+}}$ / B''$^{{6+}}$)",
+                  "B' site", "B'' site")
+
+    # --- Row 5: Double Perovskite Cat 3 (2+/4+): 3x6 ---
+    for idx, a in enumerate(dp3_A):
+        ax = fig.add_subplot(gs[4, idx*4:(idx*4)+4])
+        data = [[status("Double Perovskite", make_formula_dp(a, bp, bpp))
+                 for bpp in dp3_Bpp] for bp in dp3_Bp]
+        draw_grid(ax, dp3_Bp, dp3_Bpp, data,
+                  f"Dbl. Perovskite  {a}$_2$B'B''O$_6$\n(B'$^{{2+}}$ / B''$^{{4+}}$)",
+                  "B' site", "B'' site")
+
+    # --- Row 6: Double Perovskite Cat 4 (4+/4+): lower triangle, trimmed ---
+    # Rows = all except first (Ti), Cols = all except last (Sn)
+    # Lower triangle: b1_idx > b2_idx in original list
+    dp4_rows = dp4_B[1:]    # Zr, Hf, Ce, Sn
+    dp4_cols = dp4_B[:-1]   # Ti, Zr, Hf, Ce
+    for idx, a in enumerate(dp4_A):
+        ax = fig.add_subplot(gs[5, idx*4:(idx*4)+4])
+        data = []
+        for b1_idx, b1 in enumerate(dp4_rows):
+            row = []
+            for b2_idx, b2 in enumerate(dp4_cols):
+                # b1 is at original index b1_idx+1, b2 at original index b2_idx
+                if b2_idx >= (b1_idx + 1):
+                    row.append(-2)  # upper triangle — skip
+                elif b1 == b2:
+                    row.append(-2)
+                else:
+                    # Try both orderings since B'/B'' are interchangeable
+                    s = status("Double Perovskite", make_formula_dp(a, b1, b2))
+                    if s == -1:
+                        s = status("Double Perovskite", make_formula_dp(a, b2, b1))
+                    row.append(s)
+            data.append(row)
+        draw_grid(ax, dp4_rows, dp4_cols, data,
+                  f"Dbl. Perovskite  {a}$_2$B'B''O$_6$\n(B'$^{{4+}}$ / B''$^{{4+}}$)",
+                  "B' site", "B'' site")
+
+    # --- Row 7: All Garnets on one row ---
+    col = 0
+    # Cat 1: rectangular grids (no B=C possible since B is 3+ and C is 4+)
+    for idx, a in enumerate(gar1_A):
+        ncols_g = len(gar1_C)
+        ax = fig.add_subplot(gs[6, col:col+ncols_g])
+        data = [[status("Garnet", make_formula_garnet(a, b, c))
+                 for c in gar1_C] for b in gar1_B]
+        draw_grid(ax, gar1_B, gar1_C, data,
+                  f"Garnet  {a}$_3$B$_2$C$_3$O$_{{12}}$\n(A$^{{2+}}$, B$^{{3+}}$, C$^{{4+}}$)",
+                  "B site", "C site")
+        col += ncols_g + 1
+
+    # Cat 2: rectangular grid, B (oct) x C (tet), gray out B=C
+    # Not symmetric: octahedral and tetrahedral are different sites
+    # C-site restricted to Al, Ga (Sc/In too large for tetrahedral)
+    for idx, a in enumerate(gar2_A):
+        ncols_g = len(gar2_C)
+        ax = fig.add_subplot(gs[6, col:col+ncols_g])
+        data = []
+        for b in gar2_B:
+            row = []
+            for c in gar2_C:
+                if b == c:
+                    row.append(-3)  # gray out B=C diagonal
+                else:
+                    row.append(status("Garnet", make_formula_garnet(a, b, c)))
+            data.append(row)
+        draw_grid(ax, gar2_B, gar2_C, data,
+                  f"Garnet  {a}$_3$B$_2$C$_3$O$_{{12}}$\n(A$^{{3+}}$, B$^{{3+}}$, C$^{{3+}}$)",
+                  "B (oct.)", "C (tet.)")
+        col += ncols_g + 1
 
     plt.savefig(base + "literature_search_results.png", dpi=200, bbox_inches='tight')
     plt.savefig(base + "literature_search_results.pdf", bbox_inches='tight')
