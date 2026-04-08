@@ -196,3 +196,7 @@ Double Perovskite,Y2MgTiO6,inaccessible,inaccessible,"inaccessible",10.1021/acsa
 Double Perovskite,Y2MgTiO6,1300,9 h,"Y2O3, MgO, TiO2",10.1016/j.heliyon.2023.e19063,"Pre-sintered 800°C/3 h then 1300°C/9 h; air; ground 1 h in agate mortar; monoclinic P21/n; Bi3+/Eu3+-doped phosphor; open access"
 Double Perovskite,Y2MgTiO6,1450,inaccessible,inaccessible,10.1111/jace.16737,"Microwave dielectric ceramics; εr=20.4, Q×f=42060 GHz; monoclinic P21/c; specific time/precursors paywalled"
 Double Perovskite,Y2MgTiO6,inaccessible,inaccessible,inaccessible,10.1021/acs.inorgchem.7b02938,"Traditional solid-state method; Mn4+-doped far-red phosphor (~715 nm); optical thermometry; specific parameters paywalled"
+Ilmenite,MgTiO3,"1200; 1300","36 h (calc); 4 h (sinter)","MgO, TiO2",10.17577/IJERTV5IS050349,"Ball milled 12 h; calcined 1200°C/36 h with intermediate grindings then sintered 1300°C/4 h at 10°C/min; ilmenite R-3; minor MgTi2O5 impurity possible"
+Ilmenite,MgTiO3,1300,inaccessible,"MgO, TiO2",10.1007/s10853-007-1510-4,"Pure-phase without excess MgO; microwave dielectric application; specific time paywalled"
+Ilmenite,ZnTiO3,900,2 h,"ZnO, TiO2",10.1016/j.ceramint.2004.01.002,"Calcined 900°C/2 h; ball milled in ethanol 24 h; ilmenite R-3 stable 700-900°C; decomposes to Zn2TiO4+rutile above ~950°C; for phase-pure powder use ≤900°C"
+Ilmenite,ZnTiO3,900-950,inaccessible,"nano-ZnO, TiO2",10.1039/C7TC00815E,"Nano-ZnO suppresses Zn2TiO4 nucleation; pure ilmenite phase; excellent microwave dielectric (Q×f ~59800 GHz); specific time paywalled"
