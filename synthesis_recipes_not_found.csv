@@ -26,3 +26,26 @@ Double Perovskite,Ba2GaSbO6,No solid-state synthesis papers found; only computat
 Double Perovskite,Ba2ScTaO6,No solid-state synthesis papers found; compound referenced only in computational contexts; Sr and Ca analogues exist experimentally
 Double Perovskite,Ca2MgMoO6,No solid-state synthesis papers found; only computational studies exist; tungstate analog Ca2MgWO6 and Sr2MgMoO6 are experimentally known but Ca+Mo end-member has not been reported
 Double Perovskite,Ca2CaMoO6,No synthesis papers found; Ca3MoO6 does not appear in accessible literature; may not be a thermodynamically stable phase (unlike Ca3WO6 which is well-studied)
+Double Perovskite,Bi2MgTiO6,"Does not adopt double perovskite A2B'B''O6 structure; forms simple perovskite Bi(Mg0.5Ti0.5)O3 with disordered B-site; metastable phase requiring high-pressure synthesis (6 GPa) for pure product (10.1021/cm061129w); ambient-pressure synthesis yields non-stoichiometric or impure product"
+Double Perovskite,Bi2MgSnO6,"Does not adopt double perovskite A2B'B''O6 structure; forms simple perovskite Bi(Mg0.5Sn0.5)O3 with disordered B-site; metastable — never reported as pure end-member by conventional solid-state synthesis; exists only as component in solid solutions (e.g. 10.1021/acssuschemeng.1c00303)"
+Double Perovskite,Bi2MgZrO6,"Does not adopt double perovskite structure; forms simple perovskite Bi(Mg0.5Zr0.5)O3 with disordered B-site; pure end-member likely requires high-pressure synthesis; exists only in solid solutions"
+Double Perovskite,Bi2MgHfO6,"Does not adopt double perovskite structure; expected to form simple perovskite Bi(Mg0.5Hf0.5)O3 by analogy with Bi(Mg0.5Ti0.5)O3 and Bi(Mg0.5Zr0.5)O3"
+Double Perovskite,Bi2MgCeO6,"Does not adopt double perovskite structure; expected to form simple perovskite Bi(Mg0.5Ce0.5)O3 by analogy with other Bi(Mg0.5B'')O3 compounds"
+Double Perovskite,Bi2MgGeO6,"Does not adopt double perovskite structure; expected to form simple perovskite Bi(Mg0.5Ge0.5)O3 by analogy with other Bi-based compositions"
+Double Perovskite,Bi2CaTiO6,"Does not adopt double perovskite structure; forms simple perovskite Bi(Ca0.5Ti0.5)O3 with mixed B-site; synthesized at ambient pressure (10.1016/j.ceramint.2017.11.194) but Ca2+ anomalously large for B-site"
+Double Perovskite,Bi2CaSnO6,"Does not adopt double perovskite structure; expected to form simple perovskite Bi(Ca0.5Sn0.5)O3 by analogy with Bi(Ca0.5Ti0.5)O3"
+Double Perovskite,Bi2CaZrO6,"Does not adopt double perovskite structure; expected to form simple perovskite Bi(Ca0.5Zr0.5)O3 by analogy with other Bi-based compositions"
+Double Perovskite,Bi2CaHfO6,"Does not adopt double perovskite structure; expected to form simple perovskite Bi(Ca0.5Hf0.5)O3 by analogy with other Bi-based compositions"
+Double Perovskite,Bi2CaCeO6,"Does not adopt double perovskite structure; expected to form simple perovskite Bi(Ca0.5Ce0.5)O3 by analogy with other Bi-based compositions"
+Double Perovskite,Bi2CaGeO6,"Does not adopt double perovskite structure; expected to form simple perovskite Bi(Ca0.5Ge0.5)O3 by analogy with other Bi-based compositions"
+Double Perovskite,Bi2ZnTiO6,"Does not adopt double perovskite structure; forms simple perovskite Bi(Zn0.5Ti0.5)O3 (P4mm) with extreme tetragonal distortion c/a=1.211; requires high-pressure synthesis 6 GPa/900°C (10.1021/cm061085r)"
+Double Perovskite,Bi2ZnSnO6,"Does not adopt double perovskite structure; expected to form simple perovskite Bi(Zn0.5Sn0.5)O3 by analogy with Bi(Zn0.5Ti0.5)O3"
+Double Perovskite,Bi2ZnZrO6,"Does not adopt double perovskite structure; expected to form simple perovskite Bi(Zn0.5Zr0.5)O3 by analogy with other Bi-based compositions"
+Double Perovskite,Bi2ZnHfO6,"Does not adopt double perovskite structure; expected to form simple perovskite Bi(Zn0.5Hf0.5)O3 by analogy with other Bi-based compositions"
+Double Perovskite,Bi2ZnCeO6,"Does not adopt double perovskite structure; expected to form simple perovskite Bi(Zn0.5Ce0.5)O3 by analogy with other Bi-based compositions"
+Double Perovskite,Bi2ZnGeO6,"Does not adopt double perovskite structure; expected to form simple perovskite Bi(Zn0.5Ge0.5)O3 by analogy with other Bi-based compositions"
+Double Perovskite,Y2MgSnO6,No synthesis papers found; compound does not appear in accessible literature; La2MgSnO6 analogue is known (10.3390/molecules27227697)
+Double Perovskite,Y2MgZrO6,No synthesis papers found; La2MgZrO6 analogue is known (1450-1600°C) but Y-based variant not reported
+Double Perovskite,Y2MgHfO6,No synthesis papers found; compound not reported in accessible literature
+Double Perovskite,Y2MgCeO6,No synthesis papers found; compound not reported in accessible literature
+Double Perovskite,Y2MgGeO6,No synthesis papers found; La2MgGeO6 analogue is known but Y-based variant not reported; tolerance factor may be unfavorable due to small Y3+ radius
