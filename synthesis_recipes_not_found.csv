@@ -1,209 +1,209 @@
-Material Class,Material Formula,Notes
-Double Perovskite,Ba2AlSbO6,No solid-state synthesis papers found; only computational/DFT studies exist (e.g. 10.1016/j.mtcomm.2023.105617)
-Double Perovskite,Ba2AlTaO6,No solid-state synthesis papers found; only computational/DFT studies exist (e.g. 10.1016/j.mtcomm.2025.112010)
-Double Perovskite,Ba2CeSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Ba2GaNbO6,No solid-state synthesis papers found; only computational studies and related solid solution Ba3GaTiNbO9 (10.1016/j.solidstatesciences.2010.08.009)
-Double Perovskite,Ba2GaSbO6,No solid-state synthesis papers found; only computational/DFT studies exist (e.g. 10.1016/j.mtcomm.2023.105617)
-Double Perovskite,Ba2GaTaO6,No papers found at all; compound does not appear in indexed literature
-Double Perovskite,Ba2HfCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Ba2HfSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Ba2ScTaO6,No solid-state synthesis papers found; compound referenced only in computational contexts; Sr and Ca analogues exist experimentally
-Double Perovskite,Ba2TiCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Ba2TiHfO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Ba2TiSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Ba2TiZrO6,Does not adopt ordered double perovskite structure; BaZr0.5Ti0.5O3 (BZT) is a well-studied disordered cubic perovskite (Pm-3m) relaxor ferroelectric
-Double Perovskite,Ba2ZrCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Ba2ZrHfO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Ba2ZrSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Bi2CaCeO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Ca0.5Ce0.5)O3 by analogy with other Bi-based compositions
-Double Perovskite,Bi2CaGeO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Ca0.5Ge0.5)O3 by analogy with other Bi-based compositions
-Double Perovskite,Bi2CaHfO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Ca0.5Hf0.5)O3 by analogy with other Bi-based compositions
-Double Perovskite,Bi2CaSnO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Ca0.5Sn0.5)O3 by analogy with Bi(Ca0.5Ti0.5)O3
-Double Perovskite,Bi2CaTiO6,Does not adopt double perovskite structure; forms simple perovskite Bi(Ca0.5Ti0.5)O3 with mixed B-site; synthesized at ambient pressure (10.1016/j.ceramint.2017.11.194) but Ca2+ anomalously large for B-site
-Double Perovskite,Bi2CaZrO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Ca0.5Zr0.5)O3 by analogy with other Bi-based compositions
-Double Perovskite,Bi2MgCeO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Mg0.5Ce0.5)O3 by analogy with other Bi(Mg0.5B'')O3 compounds
-Double Perovskite,Bi2MgGeO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Mg0.5Ge0.5)O3 by analogy with other Bi-based compositions
-Double Perovskite,Bi2MgHfO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Mg0.5Hf0.5)O3 by analogy with Bi(Mg0.5Ti0.5)O3 and Bi(Mg0.5Zr0.5)O3
-Double Perovskite,Bi2MgSnO6,Does not adopt double perovskite A2B'B''O6 structure; forms simple perovskite Bi(Mg0.5Sn0.5)O3 with disordered B-site; metastable — never reported as pure end-member by conventional solid-state synthesis; exists only as component in solid solutions (e.g. 10.1021/acssuschemeng.1c00303)
-Double Perovskite,Bi2MgTiO6,Does not adopt double perovskite A2B'B''O6 structure; forms simple perovskite Bi(Mg0.5Ti0.5)O3 with disordered B-site; metastable phase requiring high-pressure synthesis (6 GPa) for pure product (10.1021/cm061129w); ambient-pressure synthesis yields non-stoichiometric or impure product
-Double Perovskite,Bi2MgZrO6,Does not adopt double perovskite structure; forms simple perovskite Bi(Mg0.5Zr0.5)O3 with disordered B-site; pure end-member likely requires high-pressure synthesis; exists only in solid solutions
-Double Perovskite,Bi2ZnCeO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Zn0.5Ce0.5)O3 by analogy with other Bi-based compositions
-Double Perovskite,Bi2ZnGeO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Zn0.5Ge0.5)O3 by analogy with other Bi-based compositions
-Double Perovskite,Bi2ZnHfO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Zn0.5Hf0.5)O3 by analogy with other Bi-based compositions
-Double Perovskite,Bi2ZnSnO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Zn0.5Sn0.5)O3 by analogy with Bi(Zn0.5Ti0.5)O3
-Double Perovskite,Bi2ZnTiO6,Does not adopt double perovskite structure; forms simple perovskite Bi(Zn0.5Ti0.5)O3 (P4mm) with extreme tetragonal distortion c/a=1.211; requires high-pressure synthesis 6 GPa/900°C (10.1021/cm061085r)
-Double Perovskite,Bi2ZnZrO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Zn0.5Zr0.5)O3 by analogy with other Bi-based compositions
-Double Perovskite,Ca2AlSbO6,No solid-state synthesis found; one paper (10.1016/j.matchar.2013.07.006) uses sol-gel auto-combustion only
-Double Perovskite,Ca2AlTaO6,No solid-state synthesis papers found; compound does not appear in experimental literature searches
-Double Perovskite,Ca2CaMoO6,No synthesis papers found; Ca3MoO6 does not appear in accessible literature; may not be a thermodynamically stable phase (unlike Ca3WO6 which is well-studied)
-Double Perovskite,Ca2CeSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Ca2GaSbO6,No papers found for this compound
-Double Perovskite,Ca2GaTaO6,No solid-state synthesis papers found; compound appears only in theoretical or phosphor-property studies without accessible experimental detail
-Double Perovskite,Ca2HfCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Ca2HfSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Ca2InSbO6,No papers found for this compound
-Double Perovskite,Ca2MgMoO6,No solid-state synthesis papers found; only computational studies exist; tungstate analog Ca2MgWO6 and Sr2MgMoO6 are experimentally known but Ca+Mo end-member has not been reported
-Double Perovskite,Ca2TiCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Ca2TiHfO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Ca2TiSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Ca2TiZrO6,Does not adopt ordered double perovskite structure; forms disordered solid solution Ca(Ti0.5Zr0.5)O3 (orthorhombic Pbnm); isovalent +4/+4 B-site cations have no charge-ordering driving force; confirmed experimentally (10.1021/cm0523438)
-Double Perovskite,Ca2ZrCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Ca2ZrHfO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Ca2ZrSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,La2CaCeO6,"No papers found; Ca2+ is far too large for octahedral B-site coordination and almost exclusively occupies A-sites in perovskites; charge balance (La3+×2, Ca2+, Ce4+) works on paper but structural instability prevents formation; no synthesis attempts found in literature"
-Double Perovskite,La2CaGeO6,No papers found; Ca2+ is too large for octahedral B-site coordination in an La2BB'O6 framework; La2MgGeO6 is the only known ambient-pressure Ge oxide double perovskite (Mg2+ is much smaller than Ca2+); related Ln2CaGe4O12 tetrametagermanate series also excludes La
-Double Perovskite,La2MgCeO6,No papers found; compound does not appear in indexed literature under any formula variant; Ce4+ on the B-site paired with Mg2+ is chemically difficult to stabilize and likely has not been synthesized
-Double Perovskite,La2MgHfO6,"One paper found (Zhang et al., J. Luminescence, Dec 2025: Bi3+-doped WLED phosphor) confirms high-temperature solid-state synthesis, but DOI could not be retrieved and full experimental details are paywalled"
-Double Perovskite,La2ZnCeO6,"No papers found; Ce4+ on the B-site is problematic — large ionic radius (~0.87 Å) creates severe tolerance factor mismatch with Zn2+; experimental precedent (ACS Omega 2022, 10.1021/acsomega.2c00669) shows Ce4+ B-site double perovskites require extreme conditions even with Ba2+ A-site; Ce in La-based oxides strongly prefers A-site substitution as Ce3+"
-Double Perovskite,La2ZnGeO6,No papers found; Zn2+ strongly prefers tetrahedral coordination (incompatible with octahedral B-site in double perovskite); ZnGeO3 itself only adopts perovskite structure at >30 GPa; La2MgGeO6 is the only confirmed ambient-pressure Ge double perovskite (Mg2+ is more octahedrally stable than Zn2+)
-Double Perovskite,La2ZnHfO6,No papers found under any formula variant; compound does not appear in indexed open literature; COD search returned zero entries; may not have been synthesized or reported yet
-Double Perovskite,La2ZnSnO6,No papers found under any formula variant; compound does not appear in indexed open literature; may not have been synthesized or reported yet
-Double Perovskite,Lu2CaCeO6,No synthesis papers found; compound not reported in accessible literature
-Double Perovskite,Lu2CaGeO6,No synthesis papers found; compound not reported in accessible literature
-Double Perovskite,Lu2CaHfO6,No synthesis papers found; compound not reported in accessible literature
-Double Perovskite,Lu2CaSnO6,No synthesis papers found; compound not reported in accessible literature
-Double Perovskite,Lu2CaTiO6,No synthesis papers found; compound not reported in accessible literature
-Double Perovskite,Lu2CaZrO6,No synthesis papers found; compound not reported in accessible literature
-Double Perovskite,Lu2MgCeO6,No synthesis papers found; compound not reported in accessible literature
-Double Perovskite,Lu2MgGeO6,No synthesis papers found; compound not reported in accessible literature
-Double Perovskite,Lu2MgHfO6,No synthesis papers found; compound not reported in accessible literature
-Double Perovskite,Lu2MgSnO6,No synthesis papers found; compound not reported in accessible literature
-Double Perovskite,Lu2MgTiO6,No synthesis papers found; La2MgTiO6 and Y2MgTiO6 analogues known but Lu variant not reported
-Double Perovskite,Lu2MgZrO6,No synthesis papers found; compound not reported in accessible literature
-Double Perovskite,Lu2ZnCeO6,No synthesis papers found; compound not reported in accessible literature
-Double Perovskite,Lu2ZnGeO6,No synthesis papers found; compound not reported in accessible literature
-Double Perovskite,Lu2ZnHfO6,No synthesis papers found; compound not reported in accessible literature
-Double Perovskite,Lu2ZnSnO6,No synthesis papers found; compound not reported in accessible literature
-Double Perovskite,Lu2ZnTiO6,No synthesis papers found; compound not reported in accessible literature
-Double Perovskite,Lu2ZnZrO6,No synthesis papers found; compound not reported in accessible literature
-Double Perovskite,Pb2CeSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Pb2HfCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Pb2HfSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Pb2TiCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Pb2TiHfO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Pb2TiSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Pb2TiZrO6,Does not adopt ordered double perovskite structure; PbZr0.5Ti0.5O3 (PZT) is the canonical disordered perovskite ferroelectric solid solution
-Double Perovskite,Pb2ZrCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Pb2ZrHfO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Pb2ZrSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Sr2AlNbO6,No experimental synthesis papers found; compound appears only in computational/DFT studies
-Double Perovskite,Sr2CeSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Sr2HfCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Sr2HfSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Sr2TiCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Sr2TiHfO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Sr2TiSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Sr2TiZrO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Sr2ZrCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Sr2ZrHfO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Sr2ZrSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
-Double Perovskite,Y2CaCeO6,"Does not form double perovskite; Ca2+ (1.00 Å) and Ce4+ (0.87 Å) both oversized for B-site with small Y3+ A-site; tolerance factor t=0.733 far below any confirmed double perovskite; La analogue also unreported"
-Double Perovskite,Y2CaGeO6,"Does not form double perovskite; Ca2+ too large for B-site with small Y3+ A-site; tolerance factor t=0.790; La analogue (La2CaGeO6) also unreported — Ca2+ too large for octahedral B-site even with La on A-site"
-Double Perovskite,Y2CaHfO6,"Does not form double perovskite; Ca2+ too large for B-site with small Y3+ A-site; tolerance factor t=0.759 far below any confirmed double perovskite"
-Double Perovskite,Y2CaSnO6,"Does not form double perovskite; Ca2+ too large for B-site with small Y3+ A-site; tolerance factor t=0.762 far below any confirmed double perovskite; La analogue exists (t=0.806) but Y substitution drops t too low"
-Double Perovskite,Y2CaTiO6,"Does not form double perovskite; Ca2+ too large for B-site with small Y3+ A-site; tolerance factor t=0.777; La analogue (La2CaTiO6) also marginal"
-Double Perovskite,Y2CaZrO6,"Does not form double perovskite; Ca2+ too large for B-site with small Y3+ A-site; tolerance factor t=0.757 far below any confirmed double perovskite"
-Double Perovskite,Y2MgCeO6,"Does not form double perovskite; Ce4+ (0.87 Å) too large for B-site with small Y3+ A-site; tolerance factor t=0.779; La analogue (La2MgCeO6) also unreported — Ce4+ is redox-unstable and tends to reduce to Ce3+"
-Double Perovskite,Y2MgGeO6,"No synthesis papers found; La2MgGeO6 analogue is confirmed; tolerance factor t=0.845 is actually the most favorable of all unconfirmed Y2B'B''O6 compositions (higher than confirmed Y2MgTiO6 at t=0.829); synthesis may require careful handling due to GeO2 volatility"
-Double Perovskite,Y2MgHfO6,No synthesis papers found; compound not reported in accessible literature
-Double Perovskite,Y2MgSnO6,No synthesis papers found; compound does not appear in accessible literature; La2MgSnO6 analogue is known (10.3390/molecules27227697)
-Double Perovskite,Y2MgZrO6,No synthesis papers found; La2MgZrO6 analogue is known (1450-1600°C) but Y-based variant not reported
-Double Perovskite,Y2ZnCeO6,"Does not form double perovskite; Ce4+ (0.87 Å) too large for B-site with small Y3+ A-site; tolerance factor t=0.776; La analogue (La2ZnCeO6) also unreported — Ce4+ is redox-unstable"
-Double Perovskite,Y2ZnGeO6,No synthesis papers found; compound not reported in accessible literature
-Double Perovskite,Y2ZnHfO6,No synthesis papers found; compound not reported in accessible literature
-Double Perovskite,Y2ZnSnO6,No synthesis papers found; compound not reported in accessible literature
-Double Perovskite,Y2ZnTiO6,No synthesis papers found; Y2MgTiO6 analogue is known but Zn variant not reported
-Double Perovskite,Y2ZnZrO6,No synthesis papers found; RE2ZrZnO6 known for RE=La/Dy/Ho (10.1088/1402-4896/ad3300) but not Y
-Garnet,Ba3Al2Ge3O12,Does not form garnet structure; Ba2+ far too large for dodecahedral site
-Garnet,Ba3Al2Si3O12,Does not form garnet structure; Ba2+ far too large for dodecahedral site in garnet
-Garnet,Ba3Ga2Ge3O12,Does not form garnet structure; Ba2+ far too large for dodecahedral site
-Garnet,Ba3Ga2Si3O12,Does not form garnet structure; Ba2+ far too large for dodecahedral site
-Garnet,Ba3Sc2Ge3O12,Does not form garnet structure; Ba2+ far too large for dodecahedral site
-Garnet,Ba3Sc2Si3O12,Does not form garnet structure; Ba2+ far too large for dodecahedral site
-Garnet,Ca3Al2Si3O12,Grossular garnet not stable at ambient pressure above ~855°C; decomposes to wollastonite+gehlenite+anorthite; requires high-pressure synthesis (6-15 GPa at ~1400°C) for phase-pure product (10.1038/ncomms13753; 10.1086/625736)
-Garnet,Ca3Ga2Ge3O12,Forms garnet but only synthesized by Czochralski melt growth (~1380°C mp); no conventional solid-state synthesis found (10.1016/0025-5408(77)90090-3)
-Garnet,Ca3Ga2Si3O12,No synthesis papers found; compound not reported in accessible literature at any pressure
-Garnet,La3Al2Ga3O12,No synthesis report found; La3+ too large for dodecahedral site without Sc on octahedral site to expand lattice
-Garnet,La3Al2Sc3O12,Computationally predicted but thermodynamically unstable above ~685 K; decomposes to LaAlO3+Sc2O3 at synthesis temperatures (10.1016/j.commatsci.2024.113112)
-Garnet,La3Ga2Sc3O12,Forms garnet but non-stoichiometric; La3+ does not fully occupy A-site; some Sc leaks to dodecahedral site (10.1016/S0022-4596(73)80034-9); no conventional solid-state recipe with full La occupancy
-Garnet,Lu3Al2Sc3O12,Full Sc3 endpoint not reported as single-phase garnet; only partial Sc substitution in LuAG documented (10.1016/j.ceramint.2024.08.041)
-Garnet,Lu3Ga2Sc3O12,No direct synthesis report found; likely feasible by analogy with Gd3Sc2Ga3O12 (GSGG) but not experimentally confirmed for Lu
-Garnet,Mg3Al2Ge3O12,No synthesis papers found; Mg2+ too small for dodecahedral site; not reported at ambient or high pressure
-Garnet,Mg3Al2Si3O12,Pyrope garnet; requires high pressure (>1.6 GPa) for synthesis; not stable at ambient pressure; Mg2+ too small for dodecahedral site at 1 atm
-Garnet,Mg3Ga2Ge3O12,No synthesis papers found; Mg2+ too small for dodecahedral site; compound not reported
-Garnet,Mg3Ga2Si3O12,No synthesis papers found; Mg2+ too small for dodecahedral site; compound not reported
-Garnet,Mg3Sc2Ge3O12,No synthesis papers found; Mg2+ too small for dodecahedral site; inverse garnet uncertain since Sc3+ may be too small for dodecahedral site
-Garnet,Mg3Sc2Si3O12,No synthesis papers found; Mg2+ too small for dodecahedral site; compound not reported
-Garnet,Sr3Al2Ge3O12,No synthesis papers found specifically; Sr germanate garnets exist with larger B-site cations (Y/Sc) but Sr3Al2Ge3O12 not reported
-Garnet,Sr3Al2Si3O12,No synthesis papers found; Sr-based garnets exist only as germanates (not silicates); Si4+ gives too tight a framework for large Sr2+
-Garnet,Sr3Ga2Ge3O12,No synthesis papers found; compound not reported in accessible literature
-Garnet,Sr3Ga2Si3O12,No synthesis papers found; Si framework too small for Sr2+ with Ga on B-site
-Garnet,Sr3Sc2Ge3O12,Exists as garnet — known phosphor host (e.g. 10.1021/acs.chemmater.4c01743) — but needs separate search for solid-state synthesis recipe
-Garnet,Sr3Sc2Si3O12,"Does not form garnet structure; no Sr-silicate garnets exist for any B-site cation — Si4+ tetrahedral framework too small to accommodate Sr2+ on the dodecahedral site; all known Sr garnets are germanates (e.g. Sr3Sc2Ge3O12, Sr3Y2Ge3O12); ref: Song et al. Acta Cryst. C 2019 (garnet tolerance factor)"
-Ilmenite,BaCeO3,Does not adopt ilmenite structure; forms orthorhombic perovskite (Pnma); proton conductor
-Ilmenite,BaGeO3,Does not adopt ilmenite structure; hexagonal pseudowollastonite at ambient with [GeO3]3 rings
-Ilmenite,BaHfO3,Does not adopt ilmenite structure; forms cubic perovskite
-Ilmenite,BaSiO3,Does not adopt ilmenite structure; orthorhombic structure at ambient; perovskite only at ~141 GPa
-Ilmenite,BaSnO3,Does not adopt ilmenite structure; forms cubic perovskite
-Ilmenite,BaTiO3,Does not adopt ilmenite structure; forms tetragonal perovskite (P4mm); iconic ferroelectric
-Ilmenite,BaZrO3,Does not adopt ilmenite structure; forms cubic perovskite (Pm-3m)
-Ilmenite,CaCeO3,Does not adopt ilmenite structure; forms orthorhombic perovskite (Pnma)
-Ilmenite,CaGeO3,Does not adopt ilmenite structure; ambient form is triclinic wollastonite; transforms to garnet then perovskite at high pressure; never ilmenite
-Ilmenite,CaHfO3,Does not adopt ilmenite structure; forms orthorhombic perovskite isostructural with CaZrO3
-Ilmenite,CaSiO3,Does not adopt ilmenite structure; ambient form is wollastonite (chain silicate); perovskite only at ~13 GPa; never ilmenite
-Ilmenite,CaSnO3,Does not adopt ilmenite structure; forms orthorhombic perovskite (Pbnm)
-Ilmenite,CaTiO3,Does not adopt ilmenite structure; forms orthorhombic perovskite (Pbnm) — the original perovskite mineral; Ca2+ far too large for ilmenite A-site
-Ilmenite,CaZrO3,Does not adopt ilmenite structure; forms orthorhombic perovskite (mineral lakargiite)
-Ilmenite,MgCeO3,Does not exist as single phase; Ce4+ far too large for B-site in ilmenite with Mg; likely unstable against decomposition to MgO + CeO2
-Ilmenite,MgGeO3,Does not adopt ilmenite structure at ambient pressure; requires high-pressure synthesis (~5 GPa at ~1100°C in multi-anvil press) from orthopyroxene precursor (10.2138/am-2021-7685); ambient form is orthopyroxene
-Ilmenite,MgHfO3,Does not adopt ilmenite structure; expected perovskite like MgZrO3; Hf4+ ~Zr4+ in size
-Ilmenite,MgSiO3,Does not adopt ilmenite structure at ambient pressure; MgSiO3-ilmenite (akimotoite) is a high-pressure polymorph stable at ~18-25 GPa; ambient-pressure form is enstatite/clinoenstatite (pyroxene); requires multi-anvil press synthesis
-Ilmenite,MgSnO3,Does not adopt ilmenite (R-3) structure; ilmenite phase computed to be dynamically unstable for this composition; ambient-pressure bulk form is perovskite-type (Pnma); decomposes above ~800-1000°C
-Ilmenite,MgZrO3,Does not adopt ilmenite structure; forms perovskite (Pm-3m); Zr4+ too large for ilmenite B-site with Mg
-Ilmenite,PbCeO3,Does not adopt ilmenite structure; forms perovskite
-Ilmenite,PbGeO3,Does not adopt ilmenite structure; likely pyroxene-like at ambient
-Ilmenite,PbHfO3,Does not adopt ilmenite structure; forms orthorhombic perovskite (Pbam) isostructural with PbZrO3
-Ilmenite,PbSiO3,Does not adopt ilmenite structure; forms monoclinic alamosite (P2/n); chain silicate
-Ilmenite,PbSnO3,Does not adopt ilmenite structure; forms pyrochlore at ambient; perovskite only under high pressure
-Ilmenite,PbTiO3,Does not adopt ilmenite structure; forms tetragonal perovskite (P4mm); ferroelectric
-Ilmenite,PbZrO3,Does not adopt ilmenite structure; forms orthorhombic perovskite (Pbam); antiferroelectric
-Ilmenite,SrCeO3,Does not adopt ilmenite structure; forms orthorhombic perovskite (Pnma); proton conductor
-Ilmenite,SrGeO3,Does not adopt ilmenite structure; ambient form is pseudowollastonite; perovskite at ~6 GPa; never ilmenite
-Ilmenite,SrHfO3,Does not adopt ilmenite structure; forms orthorhombic perovskite isostructural with SrZrO3
-Ilmenite,SrSiO3,Does not adopt ilmenite structure; ambient form is pseudowollastonite (monoclinic C2/c); never ilmenite
-Ilmenite,SrSnO3,Does not adopt ilmenite structure; forms orthorhombic perovskite (Pnma)
-Ilmenite,SrTiO3,Does not adopt ilmenite structure; forms cubic perovskite (Pm-3m); Sr2+ far too large for ilmenite
-Ilmenite,SrZrO3,Does not adopt ilmenite structure; forms orthorhombic perovskite (Pnma)
-Ilmenite,ZnCeO3,Does not exist; Ce4+ far too large for ilmenite B-site; compound not reported
-Ilmenite,ZnGeO3,Does not adopt ilmenite at ambient pressure; requires high-pressure synthesis; ambient form is clinopyroxene
-Ilmenite,ZnHfO3,Does not adopt ilmenite structure; expected perovskite like ZnZrO3; Hf4+ ~Zr4+ in size
-Ilmenite,ZnSiO3,Does not adopt ilmenite at ambient pressure; ilmenite only at ~10-12 GPa; ambient form is clinopyroxene (C2/c)
-Ilmenite,ZnSnO3,Does not adopt ilmenite at ambient pressure; requires ~7 GPa for LiNbO3-type/ilmenite; decomposes at ambient to ZnO + SnO2
-Ilmenite,ZnZrO3,Does not adopt ilmenite structure; forms perovskite (Pm-3m); Zr4+ too large for ilmenite B-site
-Pyrochlore,Ba2Nb2O7,Does not exist as stable single phase; Ba2+ too large; Ba-Nb oxides form other compositions (e.g. BaNb2O6)
-Pyrochlore,Ba2Ta2O7,Does not exist as stable single phase; Ba2+ too large; same issue as Ba2Nb2O7
-Pyrochlore,Bi2Ce2O7,Does not adopt pyrochlore structure; rA/rB=1.34 too small; forms defect fluorite
-Pyrochlore,Bi2Ge2O7,Does not adopt pyrochlore structure; rA/rB=2.21 far too large; adopts other crystal structure
-Pyrochlore,Bi2Hf2O7,Forms pyrochlore but cannot be made by conventional solid-state synthesis of Bi2O3 + HfO2; requires coprecipitation followed by calcination at 700-950°C; exhibits alpha/beta/gamma/delta polymorphs at ~400/550/900°C; delta polymorph is ideal cubic pyrochlore (Fd-3m); decomposes at ~1000°C into HfO2 + Bi1.94Hf0.06O3.03 (beta-Bi2O3 structure); Bi volatility precludes high-temp solid-state routes; ref: 10.1021/cm062864a (Henderson et al. 2007)
-Pyrochlore,Bi2Ti2O7,Forms pyrochlore but is metastable — cannot be made by conventional solid-state synthesis; requires coprecipitation from H2O2/NH3(aq) solutions of Ti with aqueous Bi(NO3)3; pure phase only obtainable within a few degrees of 470°C; decomposes to Bi4Ti3O12 + Bi2Ti4O11 above ~600°C; Li stabilization extends stability to 1100°C but changes composition; refs: 10.1016/S0022-4596(03)00378-5 (Hector & Wiggin 2004) and 10.1021/cm202154c (Esquivel-Elizondo et al. 2011)
-Pyrochlore,Bi2Zr2O7,Forms metastable pyrochlore-like phase — cannot be made by conventional solid-state synthesis; requires EDTA-chelation of equimolar Zr4+/Bi3+ followed by calcination at 750°C/3h in air; product contains minor beta-Bi2O3 impurity; phase is metastable and decomposes at higher temperatures into ZrO2 + Bi1.84Zr0.16O3.08 (beta-Bi2O3 structure); ref: 10.1021/acs.inorgchem.8b02258
-Pyrochlore,Ca2Nb2O7,Does not adopt pyrochlore structure; forms orthorhombic layered perovskite
-Pyrochlore,Ca2Ta2O7,Does not adopt pyrochlore structure; forms layered perovskite isostructural with Ca2Nb2O7
-Pyrochlore,La2Ce2O7,"Does not form pyrochlore structure — La2Ce2O7 adopts a disordered defect-fluorite structure (cubic, Fm-3m) with randomly distributed anion vacancies; pyrochlore superstructure peaks are absent or unresolvable; A/B site antisite disorder is not applicable as the cation sublattice is already disordered; refs: 10.3390/ma15114007 (solid-state synthesis at 1300–1400°C/6h in air confirmed) and 10.1103/PhysRevB.85.132101 (neutron/synchrotron confirmation of fluorite, not pyrochlore)"
-Pyrochlore,La2Ge2O7,Does not form pyrochlore structure — La2Ge2O7 adopts a triclinic structure (space group P1) containing mixed Ge environments (trigermanate chains [Ge3O10] and isolated [GeO4] tetrahedra); cannot disorder via A/B antisite swapping like a pyrochlore; refs: 10.1016/j.ceramint.2020.02.133 and 10.1016/j.jlumin.2022.119295
-Pyrochlore,Lu2Ce2O7,Does not adopt pyrochlore structure; rA/rB=1.12 far too small; forms defect fluorite
-Pyrochlore,Lu2Ge2O7,Does not adopt pyrochlore structure; rA/rB=1.84 too large; adopts monoclinic structure
-Pyrochlore,Lu2Hf2O7,Does not adopt pyrochlore structure; rA/rB=1.38 below stability window; forms defect fluorite
-Pyrochlore,Lu2Sn2O7,Does not adopt pyrochlore structure; rA/rB=1.42 at/below boundary; forms defect fluorite
-Pyrochlore,Lu2Zr2O7,Does not adopt pyrochlore structure; rA/rB=1.36 below stability window; forms defect fluorite
-Pyrochlore,Pb2Nb2O7,Stoichiometric pyrochlore requires high-pressure synthesis (~6.5 GPa); at ambient pressure only defect pyrochlore Pb1.5Nb2O6.5 forms at 600-700°C (10.1021/ic50066a038)
-Pyrochlore,Pb2Ta2O7,Stoichiometric pyrochlore requires high-pressure synthesis (~6.5 GPa); at ambient pressure only defect pyrochlore Pb1.5Ta2O6.5 forms (10.1021/ic50066a038)
-Pyrochlore,Sr2Nb2O7,Does not adopt pyrochlore structure; forms well-known orthorhombic layered perovskite (Cmc21)
-Pyrochlore,Sr2Ta2O7,Does not adopt pyrochlore structure; forms layered perovskite isostructural with Sr2Nb2O7
-Pyrochlore,Y2Ce2O7,Does not adopt pyrochlore structure; rA/rB=1.17 far too small; forms defect fluorite
-Pyrochlore,Y2Ge2O7,Does not adopt pyrochlore structure; rA/rB=1.92 too large; adopts monoclinic structure (P21/c)
-Pyrochlore,Y2Hf2O7,Does not adopt pyrochlore structure; rA/rB=1.44 below stability window; forms defect fluorite
-Pyrochlore,Y2Zr2O7,Does not adopt pyrochlore structure; rA/rB=1.42 below stability window; forms defect fluorite (disordered)
-Spinel,MgSc2O4,No solid-state synthesis papers found; compound appears to be studied primarily theoretically
-Spinel,ZnIn2O4,No solid-state synthesis papers found; existing ZnIn2O4 literature uses wet chemistry routes (hydrothermal)
-Spinel,ZnSc2O4,No synthesis papers found at all; extremely rare in experimental literature
+Material Class,Material Formula,Notes,Viability Checked
+Double Perovskite,Ba2AlSbO6,No solid-state synthesis papers found; only computational/DFT studies exist (e.g. 10.1016/j.mtcomm.2023.105617),FALSE
+Double Perovskite,Ba2AlTaO6,No solid-state synthesis papers found; only computational/DFT studies exist (e.g. 10.1016/j.mtcomm.2025.112010),FALSE
+Double Perovskite,Ba2CeSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Ba2GaNbO6,No solid-state synthesis papers found; only computational studies and related solid solution Ba3GaTiNbO9 (10.1016/j.solidstatesciences.2010.08.009),FALSE
+Double Perovskite,Ba2GaSbO6,No solid-state synthesis papers found; only computational/DFT studies exist (e.g. 10.1016/j.mtcomm.2023.105617),FALSE
+Double Perovskite,Ba2GaTaO6,No papers found at all; compound does not appear in indexed literature,FALSE
+Double Perovskite,Ba2HfCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Ba2HfSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Ba2ScTaO6,No solid-state synthesis papers found; compound referenced only in computational contexts; Sr and Ca analogues exist experimentally,FALSE
+Double Perovskite,Ba2TiCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Ba2TiHfO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Ba2TiSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Ba2TiZrO6,Does not adopt ordered double perovskite structure; BaZr0.5Ti0.5O3 (BZT) is a well-studied disordered cubic perovskite (Pm-3m) relaxor ferroelectric,FALSE
+Double Perovskite,Ba2ZrCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Ba2ZrHfO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Ba2ZrSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Bi2CaCeO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Ca0.5Ce0.5)O3 by analogy with other Bi-based compositions,FALSE
+Double Perovskite,Bi2CaGeO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Ca0.5Ge0.5)O3 by analogy with other Bi-based compositions,FALSE
+Double Perovskite,Bi2CaHfO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Ca0.5Hf0.5)O3 by analogy with other Bi-based compositions,FALSE
+Double Perovskite,Bi2CaSnO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Ca0.5Sn0.5)O3 by analogy with Bi(Ca0.5Ti0.5)O3,FALSE
+Double Perovskite,Bi2CaTiO6,Does not adopt double perovskite structure; forms simple perovskite Bi(Ca0.5Ti0.5)O3 with mixed B-site; synthesized at ambient pressure (10.1016/j.ceramint.2017.11.194) but Ca2+ anomalously large for B-site,FALSE
+Double Perovskite,Bi2CaZrO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Ca0.5Zr0.5)O3 by analogy with other Bi-based compositions,FALSE
+Double Perovskite,Bi2MgCeO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Mg0.5Ce0.5)O3 by analogy with other Bi(Mg0.5B'')O3 compounds,FALSE
+Double Perovskite,Bi2MgGeO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Mg0.5Ge0.5)O3 by analogy with other Bi-based compositions,FALSE
+Double Perovskite,Bi2MgHfO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Mg0.5Hf0.5)O3 by analogy with Bi(Mg0.5Ti0.5)O3 and Bi(Mg0.5Zr0.5)O3,FALSE
+Double Perovskite,Bi2MgSnO6,Does not adopt double perovskite A2B'B''O6 structure; forms simple perovskite Bi(Mg0.5Sn0.5)O3 with disordered B-site; metastable — never reported as pure end-member by conventional solid-state synthesis; exists only as component in solid solutions (e.g. 10.1021/acssuschemeng.1c00303),FALSE
+Double Perovskite,Bi2MgTiO6,Does not adopt double perovskite A2B'B''O6 structure; forms simple perovskite Bi(Mg0.5Ti0.5)O3 with disordered B-site; metastable phase requiring high-pressure synthesis (6 GPa) for pure product (10.1021/cm061129w); ambient-pressure synthesis yields non-stoichiometric or impure product,FALSE
+Double Perovskite,Bi2MgZrO6,Does not adopt double perovskite structure; forms simple perovskite Bi(Mg0.5Zr0.5)O3 with disordered B-site; pure end-member likely requires high-pressure synthesis; exists only in solid solutions,FALSE
+Double Perovskite,Bi2ZnCeO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Zn0.5Ce0.5)O3 by analogy with other Bi-based compositions,FALSE
+Double Perovskite,Bi2ZnGeO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Zn0.5Ge0.5)O3 by analogy with other Bi-based compositions,FALSE
+Double Perovskite,Bi2ZnHfO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Zn0.5Hf0.5)O3 by analogy with other Bi-based compositions,FALSE
+Double Perovskite,Bi2ZnSnO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Zn0.5Sn0.5)O3 by analogy with Bi(Zn0.5Ti0.5)O3,FALSE
+Double Perovskite,Bi2ZnTiO6,Does not adopt double perovskite structure; forms simple perovskite Bi(Zn0.5Ti0.5)O3 (P4mm) with extreme tetragonal distortion c/a=1.211; requires high-pressure synthesis 6 GPa/900°C (10.1021/cm061085r),FALSE
+Double Perovskite,Bi2ZnZrO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Zn0.5Zr0.5)O3 by analogy with other Bi-based compositions,FALSE
+Double Perovskite,Ca2AlSbO6,No solid-state synthesis found; one paper (10.1016/j.matchar.2013.07.006) uses sol-gel auto-combustion only,FALSE
+Double Perovskite,Ca2AlTaO6,No solid-state synthesis papers found; compound does not appear in experimental literature searches,FALSE
+Double Perovskite,Ca2CaMoO6,No synthesis papers found; Ca3MoO6 does not appear in accessible literature; may not be a thermodynamically stable phase (unlike Ca3WO6 which is well-studied),FALSE
+Double Perovskite,Ca2CeSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Ca2GaSbO6,No papers found for this compound,FALSE
+Double Perovskite,Ca2GaTaO6,No solid-state synthesis papers found; compound appears only in theoretical or phosphor-property studies without accessible experimental detail,FALSE
+Double Perovskite,Ca2HfCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Ca2HfSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Ca2InSbO6,No papers found for this compound,FALSE
+Double Perovskite,Ca2MgMoO6,No solid-state synthesis papers found; only computational studies exist; tungstate analog Ca2MgWO6 and Sr2MgMoO6 are experimentally known but Ca+Mo end-member has not been reported,FALSE
+Double Perovskite,Ca2TiCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Ca2TiHfO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Ca2TiSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Ca2TiZrO6,Does not adopt ordered double perovskite structure; forms disordered solid solution Ca(Ti0.5Zr0.5)O3 (orthorhombic Pbnm); isovalent +4/+4 B-site cations have no charge-ordering driving force; confirmed experimentally (10.1021/cm0523438),FALSE
+Double Perovskite,Ca2ZrCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Ca2ZrHfO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Ca2ZrSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,La2CaCeO6,"No papers found; Ca2+ is far too large for octahedral B-site coordination and almost exclusively occupies A-sites in perovskites; charge balance (La3+×2, Ca2+, Ce4+) works on paper but structural instability prevents formation; no synthesis attempts found in literature",FALSE
+Double Perovskite,La2CaGeO6,No papers found; Ca2+ is too large for octahedral B-site coordination in an La2BB'O6 framework; La2MgGeO6 is the only known ambient-pressure Ge oxide double perovskite (Mg2+ is much smaller than Ca2+); related Ln2CaGe4O12 tetrametagermanate series also excludes La,FALSE
+Double Perovskite,La2MgCeO6,No papers found; compound does not appear in indexed literature under any formula variant; Ce4+ on the B-site paired with Mg2+ is chemically difficult to stabilize and likely has not been synthesized,FALSE
+Double Perovskite,La2MgHfO6,"One paper found (Zhang et al., J. Luminescence, Dec 2025: Bi3+-doped WLED phosphor) confirms high-temperature solid-state synthesis, but DOI could not be retrieved and full experimental details are paywalled",FALSE
+Double Perovskite,La2ZnCeO6,"No papers found; Ce4+ on the B-site is problematic — large ionic radius (~0.87 Å) creates severe tolerance factor mismatch with Zn2+; experimental precedent (ACS Omega 2022, 10.1021/acsomega.2c00669) shows Ce4+ B-site double perovskites require extreme conditions even with Ba2+ A-site; Ce in La-based oxides strongly prefers A-site substitution as Ce3+",FALSE
+Double Perovskite,La2ZnGeO6,No papers found; Zn2+ strongly prefers tetrahedral coordination (incompatible with octahedral B-site in double perovskite); ZnGeO3 itself only adopts perovskite structure at >30 GPa; La2MgGeO6 is the only confirmed ambient-pressure Ge double perovskite (Mg2+ is more octahedrally stable than Zn2+),FALSE
+Double Perovskite,La2ZnHfO6,No papers found under any formula variant; compound does not appear in indexed open literature; COD search returned zero entries; may not have been synthesized or reported yet,FALSE
+Double Perovskite,La2ZnSnO6,No papers found under any formula variant; compound does not appear in indexed open literature; may not have been synthesized or reported yet,FALSE
+Double Perovskite,Lu2CaCeO6,No synthesis papers found; compound not reported in accessible literature,FALSE
+Double Perovskite,Lu2CaGeO6,No synthesis papers found; compound not reported in accessible literature,FALSE
+Double Perovskite,Lu2CaHfO6,No synthesis papers found; compound not reported in accessible literature,FALSE
+Double Perovskite,Lu2CaSnO6,No synthesis papers found; compound not reported in accessible literature,FALSE
+Double Perovskite,Lu2CaTiO6,No synthesis papers found; compound not reported in accessible literature,FALSE
+Double Perovskite,Lu2CaZrO6,No synthesis papers found; compound not reported in accessible literature,FALSE
+Double Perovskite,Lu2MgCeO6,No synthesis papers found; compound not reported in accessible literature,FALSE
+Double Perovskite,Lu2MgGeO6,No synthesis papers found; compound not reported in accessible literature,FALSE
+Double Perovskite,Lu2MgHfO6,No synthesis papers found; compound not reported in accessible literature,FALSE
+Double Perovskite,Lu2MgSnO6,No synthesis papers found; compound not reported in accessible literature,FALSE
+Double Perovskite,Lu2MgTiO6,No synthesis papers found; La2MgTiO6 and Y2MgTiO6 analogues known but Lu variant not reported,FALSE
+Double Perovskite,Lu2MgZrO6,No synthesis papers found; compound not reported in accessible literature,FALSE
+Double Perovskite,Lu2ZnCeO6,No synthesis papers found; compound not reported in accessible literature,FALSE
+Double Perovskite,Lu2ZnGeO6,No synthesis papers found; compound not reported in accessible literature,FALSE
+Double Perovskite,Lu2ZnHfO6,No synthesis papers found; compound not reported in accessible literature,FALSE
+Double Perovskite,Lu2ZnSnO6,No synthesis papers found; compound not reported in accessible literature,FALSE
+Double Perovskite,Lu2ZnTiO6,No synthesis papers found; compound not reported in accessible literature,FALSE
+Double Perovskite,Lu2ZnZrO6,No synthesis papers found; compound not reported in accessible literature,FALSE
+Double Perovskite,Pb2CeSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Pb2HfCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Pb2HfSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Pb2TiCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Pb2TiHfO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Pb2TiSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Pb2TiZrO6,Does not adopt ordered double perovskite structure; PbZr0.5Ti0.5O3 (PZT) is the canonical disordered perovskite ferroelectric solid solution,FALSE
+Double Perovskite,Pb2ZrCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Pb2ZrHfO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Pb2ZrSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Sr2AlNbO6,No experimental synthesis papers found; compound appears only in computational/DFT studies,FALSE
+Double Perovskite,Sr2CeSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Sr2HfCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Sr2HfSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Sr2TiCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Sr2TiHfO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Sr2TiSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Sr2TiZrO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Sr2ZrCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Sr2ZrHfO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Sr2ZrSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution,FALSE
+Double Perovskite,Y2CaCeO6,Does not form double perovskite; Ca2+ (1.00 Å) and Ce4+ (0.87 Å) both oversized for B-site with small Y3+ A-site; tolerance factor t=0.733 far below any confirmed double perovskite; La analogue also unreported,TRUE
+Double Perovskite,Y2CaGeO6,Does not form double perovskite; Ca2+ too large for B-site with small Y3+ A-site; tolerance factor t=0.790; La analogue (La2CaGeO6) also unreported — Ca2+ too large for octahedral B-site even with La on A-site,TRUE
+Double Perovskite,Y2CaHfO6,Does not form double perovskite; Ca2+ too large for B-site with small Y3+ A-site; tolerance factor t=0.759 far below any confirmed double perovskite,TRUE
+Double Perovskite,Y2CaSnO6,Does not form double perovskite; Ca2+ too large for B-site with small Y3+ A-site; tolerance factor t=0.762 far below any confirmed double perovskite; La analogue exists (t=0.806) but Y substitution drops t too low,TRUE
+Double Perovskite,Y2CaTiO6,Does not form double perovskite; Ca2+ too large for B-site with small Y3+ A-site; tolerance factor t=0.777; La analogue (La2CaTiO6) also marginal,TRUE
+Double Perovskite,Y2CaZrO6,Does not form double perovskite; Ca2+ too large for B-site with small Y3+ A-site; tolerance factor t=0.757 far below any confirmed double perovskite,TRUE
+Double Perovskite,Y2MgCeO6,Does not form double perovskite; Ce4+ (0.87 Å) too large for B-site with small Y3+ A-site; tolerance factor t=0.779; La analogue (La2MgCeO6) also unreported — Ce4+ is redox-unstable and tends to reduce to Ce3+,TRUE
+Double Perovskite,Y2MgGeO6,No synthesis papers found; La2MgGeO6 analogue is confirmed; tolerance factor t=0.845 is actually the most favorable of all unconfirmed Y2B'B''O6 compositions (higher than confirmed Y2MgTiO6 at t=0.829); synthesis may require careful handling due to GeO2 volatility,TRUE
+Double Perovskite,Y2MgHfO6,No synthesis papers found; compound not reported in accessible literature,TRUE
+Double Perovskite,Y2MgSnO6,No synthesis papers found; compound does not appear in accessible literature; La2MgSnO6 analogue is known (10.3390/molecules27227697),TRUE
+Double Perovskite,Y2MgZrO6,No synthesis papers found; La2MgZrO6 analogue is known (1450-1600°C) but Y-based variant not reported,TRUE
+Double Perovskite,Y2ZnCeO6,Does not form double perovskite; Ce4+ (0.87 Å) too large for B-site with small Y3+ A-site; tolerance factor t=0.776; La analogue (La2ZnCeO6) also unreported — Ce4+ is redox-unstable,TRUE
+Double Perovskite,Y2ZnGeO6,No synthesis papers found; compound not reported in accessible literature,TRUE
+Double Perovskite,Y2ZnHfO6,No synthesis papers found; compound not reported in accessible literature,TRUE
+Double Perovskite,Y2ZnSnO6,No synthesis papers found; compound not reported in accessible literature,TRUE
+Double Perovskite,Y2ZnTiO6,No synthesis papers found; Y2MgTiO6 analogue is known but Zn variant not reported,TRUE
+Double Perovskite,Y2ZnZrO6,No synthesis papers found; RE2ZrZnO6 known for RE=La/Dy/Ho (10.1088/1402-4896/ad3300) but not Y,TRUE
+Garnet,Ba3Al2Ge3O12,Does not form garnet structure; Ba2+ far too large for dodecahedral site,FALSE
+Garnet,Ba3Al2Si3O12,Does not form garnet structure; Ba2+ far too large for dodecahedral site in garnet,FALSE
+Garnet,Ba3Ga2Ge3O12,Does not form garnet structure; Ba2+ far too large for dodecahedral site,FALSE
+Garnet,Ba3Ga2Si3O12,Does not form garnet structure; Ba2+ far too large for dodecahedral site,FALSE
+Garnet,Ba3Sc2Ge3O12,Does not form garnet structure; Ba2+ far too large for dodecahedral site,FALSE
+Garnet,Ba3Sc2Si3O12,Does not form garnet structure; Ba2+ far too large for dodecahedral site,FALSE
+Garnet,Ca3Al2Si3O12,Grossular garnet not stable at ambient pressure above ~855°C; decomposes to wollastonite+gehlenite+anorthite; requires high-pressure synthesis (6-15 GPa at ~1400°C) for phase-pure product (10.1038/ncomms13753; 10.1086/625736),FALSE
+Garnet,Ca3Ga2Ge3O12,Forms garnet but only synthesized by Czochralski melt growth (~1380°C mp); no conventional solid-state synthesis found (10.1016/0025-5408(77)90090-3),FALSE
+Garnet,Ca3Ga2Si3O12,No synthesis papers found; compound not reported in accessible literature at any pressure,FALSE
+Garnet,La3Al2Ga3O12,No synthesis report found; La3+ too large for dodecahedral site without Sc on octahedral site to expand lattice,FALSE
+Garnet,La3Al2Sc3O12,Computationally predicted but thermodynamically unstable above ~685 K; decomposes to LaAlO3+Sc2O3 at synthesis temperatures (10.1016/j.commatsci.2024.113112),FALSE
+Garnet,La3Ga2Sc3O12,Forms garnet but non-stoichiometric; La3+ does not fully occupy A-site; some Sc leaks to dodecahedral site (10.1016/S0022-4596(73)80034-9); no conventional solid-state recipe with full La occupancy,FALSE
+Garnet,Lu3Al2Sc3O12,Full Sc3 endpoint not reported as single-phase garnet; only partial Sc substitution in LuAG documented (10.1016/j.ceramint.2024.08.041),FALSE
+Garnet,Lu3Ga2Sc3O12,No direct synthesis report found; likely feasible by analogy with Gd3Sc2Ga3O12 (GSGG) but not experimentally confirmed for Lu,FALSE
+Garnet,Mg3Al2Ge3O12,No synthesis papers found; Mg2+ too small for dodecahedral site; not reported at ambient or high pressure,FALSE
+Garnet,Mg3Al2Si3O12,Pyrope garnet; requires high pressure (>1.6 GPa) for synthesis; not stable at ambient pressure; Mg2+ too small for dodecahedral site at 1 atm,FALSE
+Garnet,Mg3Ga2Ge3O12,No synthesis papers found; Mg2+ too small for dodecahedral site; compound not reported,FALSE
+Garnet,Mg3Ga2Si3O12,No synthesis papers found; Mg2+ too small for dodecahedral site; compound not reported,FALSE
+Garnet,Mg3Sc2Ge3O12,No synthesis papers found; Mg2+ too small for dodecahedral site; inverse garnet uncertain since Sc3+ may be too small for dodecahedral site,FALSE
+Garnet,Mg3Sc2Si3O12,No synthesis papers found; Mg2+ too small for dodecahedral site; compound not reported,FALSE
+Garnet,Sr3Al2Ge3O12,No synthesis papers found specifically; Sr germanate garnets exist with larger B-site cations (Y/Sc) but Sr3Al2Ge3O12 not reported,FALSE
+Garnet,Sr3Al2Si3O12,No synthesis papers found; Sr-based garnets exist only as germanates (not silicates); Si4+ gives too tight a framework for large Sr2+,FALSE
+Garnet,Sr3Ga2Ge3O12,No synthesis papers found; compound not reported in accessible literature,FALSE
+Garnet,Sr3Ga2Si3O12,No synthesis papers found; Si framework too small for Sr2+ with Ga on B-site,FALSE
+Garnet,Sr3Sc2Ge3O12,Exists as garnet — known phosphor host (e.g. 10.1021/acs.chemmater.4c01743) — but needs separate search for solid-state synthesis recipe,FALSE
+Garnet,Sr3Sc2Si3O12,"Does not form garnet structure; no Sr-silicate garnets exist for any B-site cation — Si4+ tetrahedral framework too small to accommodate Sr2+ on the dodecahedral site; all known Sr garnets are germanates (e.g. Sr3Sc2Ge3O12, Sr3Y2Ge3O12); ref: Song et al. Acta Cryst. C 2019 (garnet tolerance factor)",TRUE
+Ilmenite,BaCeO3,Does not adopt ilmenite structure; forms orthorhombic perovskite (Pnma); proton conductor,FALSE
+Ilmenite,BaGeO3,Does not adopt ilmenite structure; hexagonal pseudowollastonite at ambient with [GeO3]3 rings,FALSE
+Ilmenite,BaHfO3,Does not adopt ilmenite structure; forms cubic perovskite,FALSE
+Ilmenite,BaSiO3,Does not adopt ilmenite structure; orthorhombic structure at ambient; perovskite only at ~141 GPa,FALSE
+Ilmenite,BaSnO3,Does not adopt ilmenite structure; forms cubic perovskite,FALSE
+Ilmenite,BaTiO3,Does not adopt ilmenite structure; forms tetragonal perovskite (P4mm); iconic ferroelectric,FALSE
+Ilmenite,BaZrO3,Does not adopt ilmenite structure; forms cubic perovskite (Pm-3m),FALSE
+Ilmenite,CaCeO3,Does not adopt ilmenite structure; forms orthorhombic perovskite (Pnma),FALSE
+Ilmenite,CaGeO3,Does not adopt ilmenite structure; ambient form is triclinic wollastonite; transforms to garnet then perovskite at high pressure; never ilmenite,FALSE
+Ilmenite,CaHfO3,Does not adopt ilmenite structure; forms orthorhombic perovskite isostructural with CaZrO3,FALSE
+Ilmenite,CaSiO3,Does not adopt ilmenite structure; ambient form is wollastonite (chain silicate); perovskite only at ~13 GPa; never ilmenite,FALSE
+Ilmenite,CaSnO3,Does not adopt ilmenite structure; forms orthorhombic perovskite (Pbnm),FALSE
+Ilmenite,CaTiO3,Does not adopt ilmenite structure; forms orthorhombic perovskite (Pbnm) — the original perovskite mineral; Ca2+ far too large for ilmenite A-site,FALSE
+Ilmenite,CaZrO3,Does not adopt ilmenite structure; forms orthorhombic perovskite (mineral lakargiite),FALSE
+Ilmenite,MgCeO3,Does not exist as single phase; Ce4+ far too large for B-site in ilmenite with Mg; likely unstable against decomposition to MgO + CeO2,FALSE
+Ilmenite,MgGeO3,Does not adopt ilmenite structure at ambient pressure; requires high-pressure synthesis (~5 GPa at ~1100°C in multi-anvil press) from orthopyroxene precursor (10.2138/am-2021-7685); ambient form is orthopyroxene,FALSE
+Ilmenite,MgHfO3,Does not adopt ilmenite structure; expected perovskite like MgZrO3; Hf4+ ~Zr4+ in size,FALSE
+Ilmenite,MgSiO3,Does not adopt ilmenite structure at ambient pressure; MgSiO3-ilmenite (akimotoite) is a high-pressure polymorph stable at ~18-25 GPa; ambient-pressure form is enstatite/clinoenstatite (pyroxene); requires multi-anvil press synthesis,FALSE
+Ilmenite,MgSnO3,Does not adopt ilmenite (R-3) structure; ilmenite phase computed to be dynamically unstable for this composition; ambient-pressure bulk form is perovskite-type (Pnma); decomposes above ~800-1000°C,FALSE
+Ilmenite,MgZrO3,Does not adopt ilmenite structure; forms perovskite (Pm-3m); Zr4+ too large for ilmenite B-site with Mg,FALSE
+Ilmenite,PbCeO3,Does not adopt ilmenite structure; forms perovskite,FALSE
+Ilmenite,PbGeO3,Does not adopt ilmenite structure; likely pyroxene-like at ambient,FALSE
+Ilmenite,PbHfO3,Does not adopt ilmenite structure; forms orthorhombic perovskite (Pbam) isostructural with PbZrO3,FALSE
+Ilmenite,PbSiO3,Does not adopt ilmenite structure; forms monoclinic alamosite (P2/n); chain silicate,FALSE
+Ilmenite,PbSnO3,Does not adopt ilmenite structure; forms pyrochlore at ambient; perovskite only under high pressure,FALSE
+Ilmenite,PbTiO3,Does not adopt ilmenite structure; forms tetragonal perovskite (P4mm); ferroelectric,FALSE
+Ilmenite,PbZrO3,Does not adopt ilmenite structure; forms orthorhombic perovskite (Pbam); antiferroelectric,FALSE
+Ilmenite,SrCeO3,Does not adopt ilmenite structure; forms orthorhombic perovskite (Pnma); proton conductor,FALSE
+Ilmenite,SrGeO3,Does not adopt ilmenite structure; ambient form is pseudowollastonite; perovskite at ~6 GPa; never ilmenite,FALSE
+Ilmenite,SrHfO3,Does not adopt ilmenite structure; forms orthorhombic perovskite isostructural with SrZrO3,FALSE
+Ilmenite,SrSiO3,Does not adopt ilmenite structure; ambient form is pseudowollastonite (monoclinic C2/c); never ilmenite,FALSE
+Ilmenite,SrSnO3,Does not adopt ilmenite structure; forms orthorhombic perovskite (Pnma),FALSE
+Ilmenite,SrTiO3,Does not adopt ilmenite structure; forms cubic perovskite (Pm-3m); Sr2+ far too large for ilmenite,FALSE
+Ilmenite,SrZrO3,Does not adopt ilmenite structure; forms orthorhombic perovskite (Pnma),FALSE
+Ilmenite,ZnCeO3,Does not exist; Ce4+ far too large for ilmenite B-site; compound not reported,FALSE
+Ilmenite,ZnGeO3,Does not adopt ilmenite at ambient pressure; requires high-pressure synthesis; ambient form is clinopyroxene,FALSE
+Ilmenite,ZnHfO3,Does not adopt ilmenite structure; expected perovskite like ZnZrO3; Hf4+ ~Zr4+ in size,FALSE
+Ilmenite,ZnSiO3,Does not adopt ilmenite at ambient pressure; ilmenite only at ~10-12 GPa; ambient form is clinopyroxene (C2/c),FALSE
+Ilmenite,ZnSnO3,Does not adopt ilmenite at ambient pressure; requires ~7 GPa for LiNbO3-type/ilmenite; decomposes at ambient to ZnO + SnO2,FALSE
+Ilmenite,ZnZrO3,Does not adopt ilmenite structure; forms perovskite (Pm-3m); Zr4+ too large for ilmenite B-site,FALSE
+Pyrochlore,Ba2Nb2O7,Does not exist as stable single phase; Ba2+ too large; Ba-Nb oxides form other compositions (e.g. BaNb2O6),FALSE
+Pyrochlore,Ba2Ta2O7,Does not exist as stable single phase; Ba2+ too large; same issue as Ba2Nb2O7,FALSE
+Pyrochlore,Bi2Ce2O7,Does not adopt pyrochlore structure; rA/rB=1.34 too small; forms defect fluorite,FALSE
+Pyrochlore,Bi2Ge2O7,Does not adopt pyrochlore structure; rA/rB=2.21 far too large; adopts other crystal structure,FALSE
+Pyrochlore,Bi2Hf2O7,Forms pyrochlore but cannot be made by conventional solid-state synthesis of Bi2O3 + HfO2; requires coprecipitation followed by calcination at 700-950°C; exhibits alpha/beta/gamma/delta polymorphs at ~400/550/900°C; delta polymorph is ideal cubic pyrochlore (Fd-3m); decomposes at ~1000°C into HfO2 + Bi1.94Hf0.06O3.03 (beta-Bi2O3 structure); Bi volatility precludes high-temp solid-state routes; ref: 10.1021/cm062864a (Henderson et al. 2007),FALSE
+Pyrochlore,Bi2Ti2O7,Forms pyrochlore but is metastable — cannot be made by conventional solid-state synthesis; requires coprecipitation from H2O2/NH3(aq) solutions of Ti with aqueous Bi(NO3)3; pure phase only obtainable within a few degrees of 470°C; decomposes to Bi4Ti3O12 + Bi2Ti4O11 above ~600°C; Li stabilization extends stability to 1100°C but changes composition; refs: 10.1016/S0022-4596(03)00378-5 (Hector & Wiggin 2004) and 10.1021/cm202154c (Esquivel-Elizondo et al. 2011),FALSE
+Pyrochlore,Bi2Zr2O7,Forms metastable pyrochlore-like phase — cannot be made by conventional solid-state synthesis; requires EDTA-chelation of equimolar Zr4+/Bi3+ followed by calcination at 750°C/3h in air; product contains minor beta-Bi2O3 impurity; phase is metastable and decomposes at higher temperatures into ZrO2 + Bi1.84Zr0.16O3.08 (beta-Bi2O3 structure); ref: 10.1021/acs.inorgchem.8b02258,FALSE
+Pyrochlore,Ca2Nb2O7,Does not adopt pyrochlore structure; forms orthorhombic layered perovskite,FALSE
+Pyrochlore,Ca2Ta2O7,Does not adopt pyrochlore structure; forms layered perovskite isostructural with Ca2Nb2O7,FALSE
+Pyrochlore,La2Ce2O7,"Does not form pyrochlore structure — La2Ce2O7 adopts a disordered defect-fluorite structure (cubic, Fm-3m) with randomly distributed anion vacancies; pyrochlore superstructure peaks are absent or unresolvable; A/B site antisite disorder is not applicable as the cation sublattice is already disordered; refs: 10.3390/ma15114007 (solid-state synthesis at 1300–1400°C/6h in air confirmed) and 10.1103/PhysRevB.85.132101 (neutron/synchrotron confirmation of fluorite, not pyrochlore)",FALSE
+Pyrochlore,La2Ge2O7,Does not form pyrochlore structure — La2Ge2O7 adopts a triclinic structure (space group P1) containing mixed Ge environments (trigermanate chains [Ge3O10] and isolated [GeO4] tetrahedra); cannot disorder via A/B antisite swapping like a pyrochlore; refs: 10.1016/j.ceramint.2020.02.133 and 10.1016/j.jlumin.2022.119295,FALSE
+Pyrochlore,Lu2Ce2O7,Does not adopt pyrochlore structure; rA/rB=1.12 far too small; forms defect fluorite,FALSE
+Pyrochlore,Lu2Ge2O7,Does not adopt pyrochlore structure; rA/rB=1.84 too large; adopts monoclinic structure,FALSE
+Pyrochlore,Lu2Hf2O7,Does not adopt pyrochlore structure; rA/rB=1.38 below stability window; forms defect fluorite,FALSE
+Pyrochlore,Lu2Sn2O7,Does not adopt pyrochlore structure; rA/rB=1.42 at/below boundary; forms defect fluorite,FALSE
+Pyrochlore,Lu2Zr2O7,Does not adopt pyrochlore structure; rA/rB=1.36 below stability window; forms defect fluorite,FALSE
+Pyrochlore,Pb2Nb2O7,Stoichiometric pyrochlore requires high-pressure synthesis (~6.5 GPa); at ambient pressure only defect pyrochlore Pb1.5Nb2O6.5 forms at 600-700°C (10.1021/ic50066a038),FALSE
+Pyrochlore,Pb2Ta2O7,Stoichiometric pyrochlore requires high-pressure synthesis (~6.5 GPa); at ambient pressure only defect pyrochlore Pb1.5Ta2O6.5 forms (10.1021/ic50066a038),FALSE
+Pyrochlore,Sr2Nb2O7,Does not adopt pyrochlore structure; forms well-known orthorhombic layered perovskite (Cmc21),FALSE
+Pyrochlore,Sr2Ta2O7,Does not adopt pyrochlore structure; forms layered perovskite isostructural with Sr2Nb2O7,FALSE
+Pyrochlore,Y2Ce2O7,Does not adopt pyrochlore structure; rA/rB=1.17 far too small; forms defect fluorite,FALSE
+Pyrochlore,Y2Ge2O7,Does not adopt pyrochlore structure; rA/rB=1.92 too large; adopts monoclinic structure (P21/c),FALSE
+Pyrochlore,Y2Hf2O7,Does not adopt pyrochlore structure; rA/rB=1.44 below stability window; forms defect fluorite,FALSE
+Pyrochlore,Y2Zr2O7,Does not adopt pyrochlore structure; rA/rB=1.42 below stability window; forms defect fluorite (disordered),FALSE
+Spinel,MgSc2O4,No solid-state synthesis papers found; compound appears to be studied primarily theoretically,FALSE
+Spinel,ZnIn2O4,No solid-state synthesis papers found; existing ZnIn2O4 literature uses wet chemistry routes (hydrothermal),FALSE
+Spinel,ZnSc2O4,No synthesis papers found at all; extremely rare in experimental literature,FALSE
