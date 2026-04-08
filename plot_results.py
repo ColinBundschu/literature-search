@@ -105,7 +105,8 @@ def parse_not_found(path):
             # =================================================================
 
             # DP Cat 4: isovalent 4+/4+ → disordered perovskite (no ordering driving force)
-            if "isovalent +4/+4" in nl or "disordered solid solution" in nl:
+            # Also catches cases where B-site size similarity prevents ordering
+            if "isovalent +4/+4" in nl or "disordered solid solution" in nl or "likely forms disordered perovskite" in nl:
                 results[key] = 5
                 continue
 
