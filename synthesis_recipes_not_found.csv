@@ -180,3 +180,8 @@ Garnet,Ba3Ga2Si3O12,"Does not form garnet structure; Ba2+ far too large for dode
 Garnet,Ba3Ga2Ge3O12,"Does not form garnet structure; Ba2+ far too large for dodecahedral site"
 Garnet,Ba3Sc2Si3O12,"Does not form garnet structure; Ba2+ far too large for dodecahedral site"
 Garnet,Ba3Sc2Ge3O12,"Does not form garnet structure; Ba2+ far too large for dodecahedral site"
+Garnet,La3Al2Ga3O12,"No synthesis report found; La3+ too large for dodecahedral site without Sc on octahedral site to expand lattice"
+Garnet,La3Al2Sc3O12,"Computationally predicted but thermodynamically unstable above ~685 K; decomposes to LaAlO3+Sc2O3 at synthesis temperatures (10.1016/j.commatsci.2024.113112)"
+Garnet,La3Ga2Sc3O12,"Forms garnet but non-stoichiometric; La3+ does not fully occupy A-site; some Sc leaks to dodecahedral site (10.1016/S0022-4596(73)80034-9); no conventional solid-state recipe with full La occupancy"
+Garnet,Lu3Al2Sc3O12,"Full Sc3 endpoint not reported as single-phase garnet; only partial Sc substitution in LuAG documented (10.1016/j.ceramint.2024.08.041)"
+Garnet,Lu3Ga2Sc3O12,"No direct synthesis report found; likely feasible by analogy with Gd3Sc2Ga3O12 (GSGG) but not experimentally confirmed for Lu"
