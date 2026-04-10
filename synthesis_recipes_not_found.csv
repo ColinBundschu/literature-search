@@ -14,6 +14,7 @@ Double Perovskite,Ba2TiCeO6,Does not adopt ordered double perovskite structure; 
 Double Perovskite,Ba2TiHfO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
 Double Perovskite,Ba2TiSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
 Double Perovskite,Ba2TiZrO6,Does not adopt ordered double perovskite structure; BaZr0.5Ti0.5O3 (BZT) is a well-studied disordered cubic perovskite (Pm-3m) relaxor ferroelectric
+Double Perovskite,Ba2ZnTeO6,Does not adopt double perovskite structure at ambient pressure; forms 12R hexagonal phase with face-sharing octahedra; cubic double perovskite requires high-pressure synthesis (4 GPa/1000°C); ref: 10.1016/j.jssc.2015.11.028
 Double Perovskite,Ba2ZrCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
 Double Perovskite,Ba2ZrHfO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
 Double Perovskite,Ba2ZrSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
@@ -35,7 +36,6 @@ Double Perovskite,Bi2ZnHfO6,Does not adopt double perovskite structure; expected
 Double Perovskite,Bi2ZnSnO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Zn0.5Sn0.5)O3 by analogy with Bi(Zn0.5Ti0.5)O3
 Double Perovskite,Bi2ZnTiO6,Does not adopt double perovskite structure; forms simple perovskite Bi(Zn0.5Ti0.5)O3 (P4mm) with extreme tetragonal distortion c/a=1.211; requires high-pressure synthesis 6 GPa/900°C (10.1021/cm061085r)
 Double Perovskite,Bi2ZnZrO6,Does not adopt double perovskite structure; expected to form simple perovskite Bi(Zn0.5Zr0.5)O3 by analogy with other Bi-based compositions
-Double Perovskite,Ca2AlSbO6,No solid-state synthesis found; one paper (10.1016/j.matchar.2013.07.006) uses sol-gel auto-combustion only
 Double Perovskite,Ca2AlTaO6,No solid-state synthesis papers found; but Ca2AlSbO6 exists via sol-gel and Ca-based 3+/5+ double perovskites are well-established (e.g. Ca2CrSbO6) — likely feasible
 Double Perovskite,Ca2CeSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
 Double Perovskite,Ca2GaBiO6,No experimental synthesis papers found; Sb5+ analogue Ca2GaSbO6 is not well documented either; Al analogue Ca2AlBiO6 synthesized by sol-gel (10.2478/s11696-013-0394-9); Ga3+ (0.620 A) is similar to Al3+ (0.535 A) but larger; tolerance factor ~0.88; likely feasible by sol-gel or solid-state given Ca2AlBiO6 success
@@ -52,6 +52,7 @@ Double Perovskite,Ca2TiHfO6,Does not adopt ordered double perovskite structure; 
 Double Perovskite,Ca2TiSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
 Double Perovskite,Ca2TiZrO6,Does not adopt ordered double perovskite structure; forms disordered solid solution Ca(Ti0.5Zr0.5)O3 (orthorhombic Pbnm); isovalent +4/+4 B-site cations have no charge-ordering driving force; confirmed experimentally (10.1021/cm0523438)
 Double Perovskite,Ca2YBiO6,"No experimental synthesis papers found; only DFT studies (10.1016/j.cplett.2025.141952 — A2YBiO6 A=Mg,Ca,Ba; tolerance factor 0.76; formation energy -5.83; bandgap 2.01 eV); Sb analogue Ca2YSbO6 well-known and widely used as phosphor host (solid-state 1300-1500C); Y3+ (0.900 A) large but tolerance factor still viable; likely feasible but may need high pressure or special oxidizing conditions for Bi5+"
+Double Perovskite,Ca2ZnTeO6,No experimental synthesis papers found; tolerance factor t~0.945 favorable; Ca2ZnWO6 and Sr2ZnTeO6 analogues both confirmed; likely synthesizable at ~1100-1200°C with CaCO3+ZnO+TeO2
 Double Perovskite,Ca2ZrCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
 Double Perovskite,Ca2ZrHfO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
 Double Perovskite,Ca2ZrSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
@@ -93,6 +94,7 @@ Double Perovskite,Pb2TiHfO6,Does not adopt ordered double perovskite structure; 
 Double Perovskite,Pb2TiSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
 Double Perovskite,Pb2TiZrO6,Does not adopt ordered double perovskite structure; PbZr0.5Ti0.5O3 (PZT) is the canonical disordered perovskite ferroelectric solid solution
 Double Perovskite,Pb2YBiO6,No experimental synthesis papers found; no DFT studies found; Y3+ (0.900 A) much larger than Bi5+ (0.760 A) — large size difference favorable for ordering; but Pb2+/Bi5+ redox concern; Sb5+ analogue Pb2YSbO6 not well documented; tolerance factor reasonable; feasibility uncertain — redox stability is main concern
+Double Perovskite,Pb2ZnTeO6,No experimental synthesis papers found; tolerance factor t~1.00 very favorable; Pb2MgTeO6 is well-known and Zn2+ (0.74 Å) similar to Mg2+ (0.72 Å); likely viable but unreported
 Double Perovskite,Pb2ZrCeO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
 Double Perovskite,Pb2ZrHfO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
 Double Perovskite,Pb2ZrSnO6,Does not adopt ordered double perovskite structure; isovalent +4/+4 B-site cations form disordered solid solution
@@ -137,9 +139,18 @@ Garnet,Ba3Sc2Si3O12,Does not form garnet structure; Ba2+ far too large for dodec
 Garnet,Ca3Al2Si3O12,Grossular garnet exists as natural mineral at ambient pressure but is not stable above ~855°C at 1 atm — decomposes to wollastonite+gehlenite+anorthite; conventional high-temp solid-state synthesis not feasible; can be made by hydrothermal methods or high-pressure synthesis (6-15 GPa at ~1400°C); refs: 10.1038/ncomms13753; 10.1086/625736
 Garnet,Ca3Ga2Ge3O12,Forms garnet but only synthesized by Czochralski melt growth (~1380°C mp); no conventional solid-state synthesis found (10.1016/0025-5408(77)90090-3)
 Garnet,Ca3Ga2Si3O12,"No synthesis papers found but likely feasible; grossular (Ca3Al2Si3O12) exists as natural mineral at ambient pressure, and Ca3Sc2Si3O12 is routinely synthesized by solid-state reaction; Ga3+ (0.620 Å) is between Al3+ (0.535 Å) and Sc3+ (0.745 Å), placing it in the garnet stability window; Ca3Ga2Ge3O12 also confirmed"
+Garnet,Ca3In2Ge3O12,No papers found but likely feasible; Ca3Y2Ge3O12 (Y 0.900 Å) and Ca3Sc2Ge3O12 (Sc 0.745 Å) both confirmed as garnet; In3+ (0.800 Å) is between them; Sr3In2Ge3O12 also confirmed
+Garnet,Ca3In2Si3O12,No papers found; unlikely to form garnet — In3+ (0.800 Å) larger than Sc3+ (0.745 Å) which is the boundary for Ca-silicate garnets; Ca3Y2Si3O12 (Y 0.900 Å) already fails to form garnet
+Garnet,Ca3Y2Si3O12,"Does not form garnet; adopts orthorhombic silico-carnotite structure (Pnma); Y3+ (0.900 Å) too large for octahedral B-site in Ca-silicate garnet; only Ca3Sc2Si3O12 (Sc 0.745 Å) forms garnet among Ca-RE silicates; refs: 10.1016/S1002-0721(08)60287-2, 10.1016/j.jlumin.2009.10.029"
 Garnet,La3Al2Ga3O12,"Does not form garnet; Al3+ (0.535 Å) too small on octahedral site to expand lattice enough for La3+ (1.16 Å) on dodecahedral site; La requires Sc3+ or larger on octahedral site (Novak & Gibbs 1971, J. Solid State Chem. 6:21-28)"
+Garnet,La3Ga2Al3O12,Does not form garnet; La3+ needs large B-site cations; Ga3+ (0.620 Å) too small on octahedral site to stabilize La; La3Al2Ga3O12 also does not form
+Garnet,La3In2Al3O12,Does not form garnet; La3+ too large for A-site combined with small Al3+ on tetrahedral site; even La3Sc2Al3O12 is thermodynamically unstable
+Garnet,La3In2Ga3O12,No papers found but plausible; La3Sc2Ga3O12 forms (Sc 0.745 Å on oct) so La3In2Ga3O12 (In 0.800 Å) should provide adequate lattice expansion; In2O3 volatility is a practical challenge
 Garnet,La3Sc2Al3O12,Computationally predicted but thermodynamically unstable above ~685 K; decomposes to LaAlO3+Sc2O3 at synthesis temperatures (10.1016/j.commatsci.2024.113112)
 Garnet,La3Sc2Ga3O12,Forms garnet but non-stoichiometric; La3+ does not fully occupy A-site; some Sc leaks to dodecahedral site (10.1016/S0022-4596(73)80034-9); no conventional solid-state recipe with full La occupancy
+Garnet,Lu3Ga2Al3O12,"Does not form as ordered phase; same Ga tetrahedral preference as Y analogue; disordered Lu3(Al,Ga)5O12 exists but Ga predominantly occupies tet sites"
+Garnet,Lu3In2Al3O12,No papers found; In3+ (0.800 Å) very large for compact Lu framework combined with small Al3+ tet; feasibility uncertain
+Garnet,Lu3In2Ga3O12,No papers found but plausible; Y3In2Ga3O12 and Gd3In2Ga3O12 confirmed; Lu is smaller A-site but In+Ga combination works for larger RE
 Garnet,Lu3Sc2Al3O12,"Full Sc3 endpoint not reported as single-phase garnet; partial Sc substitution in LuAG confirmed (e.g. Lu2.97Al4ScO12:Pr via sol-gel, 10.1016/j.ceramint.2024.08.041); full endpoint likely at stability boundary"
 Garnet,Lu3Sc2Ga3O12,"No direct synthesis of exact stoichiometry but likely feasible; GSGG (Gd3Sc2Ga3O12) is commercially available; Lu-Sc-Ga garnet solid solutions confirmed (ACS Omega 2025, 10.1021/acsomega.5c01062)"
 Garnet,Mg3Al2Ge3O12,No synthesis papers found; Mg2+ too small for dodecahedral site; not reported at ambient or high pressure
@@ -152,7 +163,11 @@ Garnet,Sr3Al2Ge3O12,"Does not form garnet; Al3+ (0.535 Å) far too small on octa
 Garnet,Sr3Al2Si3O12,No synthesis papers found; Sr-based garnets exist only as germanates (not silicates); Si4+ gives too tight a framework for large Sr2+
 Garnet,Sr3Ga2Ge3O12,Does not form garnet; Ga3+ (0.620 Å) still too small on octahedral site for Sr2+ dodecahedral; smallest confirmed Sr germanate garnet B-site is Sc3+ (0.745 Å); Ga well below this threshold
 Garnet,Sr3Ga2Si3O12,No synthesis papers found; Si framework too small for Sr2+ with Ga on B-site
+Garnet,Sr3In2Si3O12,Does not form garnet; no Sr-silicate garnets exist — Si4+ tetrahedral framework too small for Sr2+ dodecahedral site regardless of B-site cation
 Garnet,Sr3Sc2Si3O12,"Does not form garnet structure; no Sr-silicate garnets exist for any B-site cation — Si4+ tetrahedral framework too small to accommodate Sr2+ on the dodecahedral site; all known Sr garnets are germanates (e.g. Sr3Sc2Ge3O12, Sr3Y2Ge3O12); ref: Song et al. Acta Cryst. C 2019 (garnet tolerance factor)"
+Garnet,Sr3Y2Si3O12,Does not form garnet; no Sr-silicate garnets exist — Si4+ tetrahedral framework too small for Sr2+ dodecahedral site regardless of B-site cation
+Garnet,Y3Ga2Al3O12,"Does not form as ordered phase; Ga3+ strongly prefers tetrahedral sites (~72% tet by NMR; Laguta et al. J. Phys. Chem. C 2016, 10.1021/acs.jpcc.6b08593); cannot force Ga-oct/Al-tet ordering; disordered Y3(Al,Ga)5O12 exists at this stoichiometry but with reversed site preference"
+Garnet,Y3In2Al3O12,No papers found; In3+ (0.800 Å) on oct with Al3+ (0.39 Å tet) creates large size mismatch between sublattices; no precedent for In-oct + Al-tet in any garnet; feasibility uncertain
 Ilmenite,BaCeO3,Does not adopt ilmenite structure; forms orthorhombic perovskite (Pnma); proton conductor
 Ilmenite,BaGeO3,Does not adopt ilmenite structure; hexagonal pseudowollastonite at ambient with [GeO3]3 rings
 Ilmenite,BaHfO3,Does not adopt ilmenite structure; forms cubic perovskite

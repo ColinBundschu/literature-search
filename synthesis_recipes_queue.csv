@@ -1,27 +1,4 @@
 Material Class,Material Formula
-Garnet,Ca3In2Si3O12
-Garnet,Ca3In2Ge3O12
-Garnet,Ca3Y2Si3O12
-Garnet,Ca3Y2Ge3O12
-Garnet,Sr3In2Si3O12
-Garnet,Sr3In2Ge3O12
-Garnet,Sr3Y2Si3O12
-Garnet,Sr3Y2Ge3O12
-Garnet,Y3In2Al3O12
-Garnet,Y3In2Ga3O12
-Garnet,La3In2Al3O12
-Garnet,La3In2Ga3O12
-Garnet,Lu3In2Al3O12
-Garnet,Lu3In2Ga3O12
-Double Perovskite,Ca2MgTeO6
-Double Perovskite,Ca2CaTeO6
-Double Perovskite,Ca2ZnTeO6
-Double Perovskite,Sr2MgTeO6
-Double Perovskite,Sr2CaTeO6
-Double Perovskite,Sr2ZnTeO6
-Double Perovskite,Ba2MgTeO6
-Double Perovskite,Ba2CaTeO6
-Double Perovskite,Ba2ZnTeO6
 Double Perovskite,Pb2AlNbO6
 Double Perovskite,Pb2AlTaO6
 Double Perovskite,Pb2AlSbO6
@@ -42,14 +19,7 @@ Double Perovskite,Pb2LuTaO6
 Double Perovskite,Pb2LuSbO6
 Double Perovskite,Pb2MgWO6
 Double Perovskite,Pb2MgMoO6
-Double Perovskite,Pb2MgTeO6
 Double Perovskite,Pb2CaWO6
 Double Perovskite,Pb2CaMoO6
-Double Perovskite,Pb2CaTeO6
 Double Perovskite,Pb2ZnWO6
 Double Perovskite,Pb2ZnMoO6
-Double Perovskite,Pb2ZnTeO6
-Pyrochlore,Pb2Sb2O7
-Garnet,Y3Ga2Al3O12
-Garnet,La3Ga2Al3O12
-Garnet,Lu3Ga2Al3O12

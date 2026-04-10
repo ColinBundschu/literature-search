@@ -90,6 +90,10 @@ def parse_not_found(path):
                 "still too small on octahedral site for sr",  # Sr3Ga2Ge3O12
                 "al3+ far too small on octahedral site for sr",  # Sr3Al2Ge3O12
                 "too small on octahedral site to expand lattice enough for la",  # La3Al2Ga3O12
+                "does not form as ordered phase",  # Ga2Al3 garnets
+                "too small on octahedral site to stabilize la",  # La3Ga2Al3O12
+                "adopts orthorhombic silico-carnotite",  # Ca3Y2Si3O12
+                "boundary for ca-silicate garnets",  # Ca3In2Si3O12
                 "thermodynamically unstable above",  # La3Sc2Al3O12
                 "dynamically unstable",  # MgSnO3 ilmenite
                 "too small for stable octahedral coordination",  # Bi Ge compounds
@@ -345,8 +349,8 @@ def main():
     gar1_C = ["Si", "Ge"]
 
     gar2_A = ["Y", "La", "Lu"]
-    gar2_B = ["Al", "Ga", "Sc", "In"]  # octahedral — any 3+ cation
-    gar2_C = ["Al", "Ga"]               # tetrahedral — only small cations fit
+    gar2_B = ["Al", "Sc", "In"]          # octahedral — removed Ga (can't be forced to oct)
+    gar2_C = ["Ga", "Al"]               # tetrahedral — swapped order; Al-Al will be invisible
 
     # =========================================================================
     # Formula builders
@@ -500,7 +504,7 @@ def main():
             row = []
             for c in gar2_C:
                 if b == c:
-                    row.append(-3)  # gray out B=C diagonal
+                    row.append(-2)  # invisible B=C cell (like DP Cat 4)
                 else:
                     row.append(status("Garnet", make_formula_garnet(a, b, c)))
             data.append(row)
