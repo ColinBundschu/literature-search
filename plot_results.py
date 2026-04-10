@@ -25,7 +25,7 @@ CAT_COLORS = {
     2: "#c5e17a",   # yellow-green (not found, feasible)
     3: "#fdd835",   # yellow (non-SS / high-pressure only)
     5: "#4db6ac",   # teal (disordered solid solution)
-    7: "#ff9f43",   # orange (prefers different phase)
+    7: "#ff9f43",   # orange (prefers different phase) — not used in current plot
     6: "#e53935",   # red (not physically possible)
 }
 
@@ -89,6 +89,9 @@ def parse_not_found(path):
                 "too large for octahedral site in zn oxide spinel",  # ZnSc2O4
                 "still too small on octahedral site for sr",  # Sr3Ga2Ge3O12
                 "al3+ far too small on octahedral site for sr",  # Sr3Al2Ge3O12
+                "too small on octahedral site to expand lattice enough for la",  # La3Al2Ga3O12
+                "thermodynamically unstable above",  # La3Sc2Al3O12
+                "dynamically unstable",  # MgSnO3 ilmenite
                 "too small for stable octahedral coordination",  # Bi Ge compounds
                 "too large for b-site when paired with",  # Bi Ca non-Ti compounds
                 "does not form perovskite; ce4+",  # Bi Ce compounds
@@ -391,8 +394,6 @@ def main():
                        label='Non-SS / high-pressure only'),
         mpatches.Patch(facecolor=CAT_COLORS[5], edgecolor='black', linewidth=1.2,
                        label='Disordered solid solution'),
-        mpatches.Patch(facecolor=CAT_COLORS[7], edgecolor='black', linewidth=1.2,
-                       label='Prefers different phase'),
         mpatches.Patch(facecolor=CAT_COLORS[6], edgecolor='black', linewidth=1.2,
                        label='Not physically possible'),
         mpatches.Patch(facecolor=CAT_COLORS[0], edgecolor='black', linewidth=1.2,
