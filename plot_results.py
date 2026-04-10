@@ -374,21 +374,75 @@ def main():
         return get_status(mc, formula, found_set, not_found_dict, queue_set)
 
     # =========================================================================
-    # Tight layout with GridSpec — reduced whitespace
+    # Fixed cell size layout — all squares same physical size
     # =========================================================================
-    from matplotlib.gridspec import GridSpec
+    CELL = 0.65       # inches per grid cell
+    HGAP = 1.8        # default horizontal gap between panels (inches)
+    VGAP = 1.3        # vertical gap between rows (inches)
+    LMARGIN = 1.2     # left margin (inches)
+    TMARGIN = 2.8     # top margin for title + legend (inches)
+    BMARGIN = 0.3     # bottom margin (inches)
+    TITLE_PAD = 0.9   # space above each grid for title (inches)
+    # Per-row horizontal gaps (some rows need more space)
+    HGAP_DP2 = 2.8    # DP Cat 2 (2+/6+)
+    HGAP_DP4 = 2.8    # DP Cat 4 (4+/4+)
+    HGAP_GAR = 2.2    # Garnets
 
-    fig = plt.figure(figsize=(26, 28))
-    fig.suptitle("Literature Search Results: Solid-State Synthesis of Oxide Ceramics",
-                 fontsize=32, fontweight='bold', y=0.99)
+    def make_ax(fig, x, y, nrows, ncols, fig_w, fig_h):
+        """Create axes at (x, y) inches from bottom-left, sized for nrows x ncols cells."""
+        return fig.add_axes([x/fig_w, y/fig_h, ncols*CELL/fig_w, nrows*CELL/fig_h])
 
-    # Height ratios tuned to grid row counts
-    gs = GridSpec(7, 16, figure=fig,
-                  height_ratios=[0.8, 4, 6, 3, 3, 5, 5],
-                  hspace=0.6, wspace=0.35,
-                  top=0.97, bottom=0.02, left=0.05, right=0.98)
+    # --- Pre-compute layout positions ---
+    # Each row is a list of (nrows, ncols) for each panel
+    # Row heights are determined by the tallest panel in that row
 
-    # --- Row 0: Legend at top ---
+    # Row 0: Spinel(2,3) Ilmenite(2,4) Pyro1(4,4) Pyro2(1,3)
+    r0_panels = [(2,3), (2,4), (4,4), (1,3)]
+    r0_h = max(nr for nr, nc in r0_panels) * CELL + TITLE_PAD
+
+    # Row 1: DP Cat1 x4, each (6,4)
+    r1_panels = [(6,4)] * 4
+    r1_h = 6 * CELL + TITLE_PAD
+
+    # Row 2: DP Cat2 x4, each (3,3)
+    r2_panels = [(3,3)] * 4
+    r2_h = 3 * CELL + TITLE_PAD
+
+    # Row 3: DP Cat3 x4, each (3,5)
+    r3_panels = [(3,5)] * 4
+    r3_h = 3 * CELL + TITLE_PAD
+
+    # Row 4: DP Cat4 x4, each (3,3) lower triangle
+    dp4_rows = dp4_B[1:]
+    dp4_cols = dp4_B[:-1]
+    r4_panels = [(len(dp4_rows), len(dp4_cols))] * 4
+    r4_h = len(dp4_rows) * CELL + TITLE_PAD
+
+    # Row 5: Garnets — Cat1(5,2) x2 + Cat2(3,2) x3
+    r5_panels = [(5,2)] * 2 + [(3,2)] * 3
+    r5_h = 5 * CELL + TITLE_PAD
+
+    total_h = TMARGIN + r0_h + VGAP + r1_h + VGAP + r2_h + VGAP + r3_h + VGAP + r4_h + VGAP + r5_h + BMARGIN
+
+    # Width: widest row is Row 3 (DP Cat3): 4 panels of 5 cols
+    # Compute width needed for each row and take the max
+    widths = [
+        3*CELL + HGAP + 4*CELL + HGAP + 4*CELL + HGAP + 3*CELL,  # row 0
+        4 * 4 * CELL + 3 * HGAP,       # row 1 (DP Cat 1)
+        4 * 3 * CELL + 3 * HGAP_DP2,   # row 2 (DP Cat 2)
+        4 * 5 * CELL + 3 * HGAP,       # row 3 (DP Cat 3)
+        4 * 3 * CELL + 3 * HGAP_DP4,   # row 4 (DP Cat 4)
+        2*2*CELL + 3*2*CELL + 4*HGAP_GAR,  # row 5 (garnets)
+    ]
+    widest = max(widths) + 2 * LMARGIN
+    fig_w = max(widest, 22)
+    fig_h = total_h
+
+    fig = plt.figure(figsize=(fig_w, fig_h))
+    fig.text(0.5, 1 - 0.5/fig_h, "Literature Search Results: Solid-State Synthesis of Oxide Ceramics",
+             fontsize=32, fontweight='bold', ha='center', va='top')
+
+    # Legend at top
     legend_patches = [
         mpatches.Patch(facecolor=CAT_COLORS[1], edgecolor='black', linewidth=1.2,
                        label='SS synthesis found'),
@@ -403,115 +457,151 @@ def main():
         mpatches.Patch(facecolor=CAT_COLORS[0], edgecolor='black', linewidth=1.2,
                        label='In queue'),
     ]
-    fig.legend(handles=legend_patches, loc='upper center', ncol=4,
-              fontsize=20, frameon=True, fancybox=True, shadow=True,
-              bbox_to_anchor=(0.5, 0.975))
+    fig.legend(handles=legend_patches, loc='upper center', ncol=3,
+              fontsize=18, frameon=True, fancybox=True, shadow=True,
+              bbox_to_anchor=(0.5, 1 - 1.0/fig_h))
 
-    # --- Row 1: Spinel + Ilmenite + Pyrochlores ---
-    ax = fig.add_subplot(gs[1, 0:3])
-    data = [[status("Spinel", make_formula_spinel(a, b)) for b in spinel_B] for a in spinel_A]
-    draw_grid(ax, spinel_A, spinel_B, data, "Spinel  AB$_2$O$_4$", "A site", "B site")
+    def row_y(row_tops, row_idx):
+        """Get the bottom y position for panels in this row (panels are top-aligned)."""
+        return row_tops[row_idx]
 
-    ax = fig.add_subplot(gs[1, 4:8])
-    data = [[status("Ilmenite", make_formula_ilmenite(a, b)) for b in ilm_B] for a in ilm_A]
-    draw_grid(ax, ilm_A, ilm_B, data, "Ilmenite  ABO$_3$", "A site", "B site")
+    # Compute row top positions (y of the top of each row's cell area, from bottom)
+    row_tops = []
+    y = BMARGIN + r5_h  # bottom of row 5 + its height = top of row 5 cells
+    row_tops.append(BMARGIN)  # row 5 (garnets) bottom
+    y += VGAP
+    row_tops.append(y)  # row 4 bottom
+    y += r4_h + VGAP
+    row_tops.append(y)  # row 3 bottom
+    y += r3_h + VGAP
+    row_tops.append(y)  # row 2 bottom
+    y += r2_h + VGAP
+    row_tops.append(y)  # row 1 bottom
+    y += r1_h + VGAP
+    row_tops.append(y)  # row 0 bottom
+    row_tops.reverse()  # now index 0 = topmost row
 
-    ax = fig.add_subplot(gs[1, 9:13])
-    data = [[status("Pyrochlore", make_formula_pyrochlore(a, b)) for b in pyro1_B] for a in pyro1_A]
-    draw_grid(ax, pyro1_A, pyro1_B, data,
-              "Pyrochlore  A$_2$B$_2$O$_7$\n(A$^{3+}$, B$^{4+}$)", "A site", "B site")
+    def place_panels(row_idx, panels_data, row_max_h):
+        """Place panels left to right, top-aligned within the row."""
+        x = LMARGIN
+        axes = []
+        for nr, nc in [(len(d[0]), len(d[0][0]) if d[0] else 0) for d in panels_data]:
+            # Align to top of row
+            y_bottom = row_tops[row_idx] + (row_max_h - TITLE_PAD - nr * CELL)
+            ax = make_ax(fig, x, y_bottom, nr, nc, fig_w, fig_h)
+            axes.append(ax)
+            x += nc * CELL + HGAP
+        return axes
 
-    ax = fig.add_subplot(gs[1, 14:16])
-    data = [[status("Pyrochlore", make_formula_pyrochlore(a, b)) for b in pyro2_B] for a in pyro2_A]
-    draw_grid(ax, pyro2_A, pyro2_B, data,
-              "Pyrochlore  A$_2$B$_2$O$_7$\n(A$^{2+}$, B$^{5+}$)", "A site", "B site")
+    # --- Row 0: Spinel + Ilmenite + Pyrochlore ---
+    x = LMARGIN
+    grids_r0 = [
+        (spinel_A, spinel_B, [[status("Spinel", make_formula_spinel(a, b)) for b in spinel_B] for a in spinel_A],
+         "Spinel  AB$_2$O$_4$", "A site", "B site"),
+        (ilm_A, ilm_B, [[status("Ilmenite", make_formula_ilmenite(a, b)) for b in ilm_B] for a in ilm_A],
+         "Ilmenite  ABO$_3$", "A site", "B site"),
+        (pyro1_A, pyro1_B, [[status("Pyrochlore", make_formula_pyrochlore(a, b)) for b in pyro1_B] for a in pyro1_A],
+         "Pyrochlore  A$_2$B$_2$O$_7$\n(A$^{3+}$, B$^{4+}$)", "A site", "B site"),
+        (pyro2_A, pyro2_B, [[status("Pyrochlore", make_formula_pyrochlore(a, b)) for b in pyro2_B] for a in pyro2_A],
+         "Pyrochlore  A$_2$B$_2$O$_7$\n(A$^{2+}$, B$^{5+}$)", "A site", "B site"),
+    ]
+    for rl, cl, data, title, ylab, xlab in grids_r0:
+        nr, nc = len(rl), len(cl)
+        y_bottom = row_tops[0] + (r0_h - TITLE_PAD - nr * CELL)
+        ax = make_ax(fig, x, y_bottom, nr, nc, fig_w, fig_h)
+        draw_grid(ax, rl, cl, data, title, ylab, xlab)
+        x += nc * CELL + HGAP
 
-    # --- Row 2: Double Perovskite Cat 1 (3+/5+): 6x4, 4 panels ---
-    for idx, a in enumerate(dp1_A):
-        ax = fig.add_subplot(gs[2, idx*4:(idx*4)+4])
+    # --- Row 1: DP Cat 1 (3+/5+) ---
+    x = LMARGIN
+    for a in dp1_A:
         data = [[status("Double Perovskite", make_formula_dp(a, bp, bpp))
                  for bpp in dp1_Bpp] for bp in dp1_Bp]
+        nr, nc = len(dp1_Bp), len(dp1_Bpp)
+        ax = make_ax(fig, x, row_tops[1], nr, nc, fig_w, fig_h)
         draw_grid(ax, dp1_Bp, dp1_Bpp, data,
                   f"Dbl. Perovskite  {a}$_2$B'B''O$_6$\n(B'$^{{3+}}$ / B''$^{{5+}}$)",
                   "B' site", "B'' site")
+        x += nc * CELL + HGAP
 
-    # --- Row 4: Double Perovskite Cat 2 (2+/6+): 3x3, 4 panels ---
-    for idx, a in enumerate(dp2_A):
-        ax = fig.add_subplot(gs[3, idx*4:(idx*4)+3])
+    # --- Row 2: DP Cat 2 (2+/6+) ---
+    x = LMARGIN
+    for a in dp2_A:
         data = [[status("Double Perovskite", make_formula_dp(a, bp, bpp))
                  for bpp in dp2_Bpp] for bp in dp2_Bp]
+        nr, nc = len(dp2_Bp), len(dp2_Bpp)
+        ax = make_ax(fig, x, row_tops[2], nr, nc, fig_w, fig_h)
         draw_grid(ax, dp2_Bp, dp2_Bpp, data,
                   f"Dbl. Perovskite  {a}$_2$B'B''O$_6$\n(B'$^{{2+}}$ / B''$^{{6+}}$)",
                   "B' site", "B'' site")
+        x += nc * CELL + HGAP_DP2
 
-    # --- Row 5: Double Perovskite Cat 3 (2+/4+): 3x6 ---
-    for idx, a in enumerate(dp3_A):
-        ax = fig.add_subplot(gs[4, idx*4:(idx*4)+4])
+    # --- Row 3: DP Cat 3 (2+/4+) ---
+    x = LMARGIN
+    for a in dp3_A:
         data = [[status("Double Perovskite", make_formula_dp(a, bp, bpp))
                  for bpp in dp3_Bpp] for bp in dp3_Bp]
+        nr, nc = len(dp3_Bp), len(dp3_Bpp)
+        ax = make_ax(fig, x, row_tops[3], nr, nc, fig_w, fig_h)
         draw_grid(ax, dp3_Bp, dp3_Bpp, data,
                   f"Dbl. Perovskite  {a}$_2$B'B''O$_6$\n(B'$^{{2+}}$ / B''$^{{4+}}$)",
                   "B' site", "B'' site")
+        x += nc * CELL + HGAP
 
-    # --- Row 6: Double Perovskite Cat 4 (4+/4+): lower triangle, trimmed ---
-    # Rows = all except first (Ti), Cols = all except last (Sn)
-    # Lower triangle: b1_idx > b2_idx in original list
-    dp4_rows = dp4_B[1:]    # Zr, Hf, Ce, Sn
-    dp4_cols = dp4_B[:-1]   # Ti, Zr, Hf, Ce
-    for idx, a in enumerate(dp4_A):
-        ax = fig.add_subplot(gs[5, idx*4:(idx*4)+4])
+    # --- Row 4: DP Cat 4 (4+/4+) lower triangle ---
+    x = LMARGIN
+    for a in dp4_A:
         data = []
         for b1_idx, b1 in enumerate(dp4_rows):
             row = []
             for b2_idx, b2 in enumerate(dp4_cols):
-                # b1 is at original index b1_idx+1, b2 at original index b2_idx
                 if b2_idx >= (b1_idx + 1):
-                    row.append(-2)  # upper triangle — skip
+                    row.append(-2)
                 elif b1 == b2:
                     row.append(-2)
                 else:
-                    # Try both orderings since B'/B'' are interchangeable
                     s = status("Double Perovskite", make_formula_dp(a, b1, b2))
                     if s == -1:
                         s = status("Double Perovskite", make_formula_dp(a, b2, b1))
                     row.append(s)
             data.append(row)
+        nr, nc = len(dp4_rows), len(dp4_cols)
+        ax = make_ax(fig, x, row_tops[4], nr, nc, fig_w, fig_h)
         draw_grid(ax, dp4_rows, dp4_cols, data,
                   f"Dbl. Perovskite  {a}$_2$B'B''O$_6$\n(B'$^{{4+}}$ / B''$^{{4+}}$)",
                   "B' site", "B'' site")
+        x += nc * CELL + HGAP_DP4
 
-    # --- Row 7: All Garnets on one row ---
-    col = 0
-    # Cat 1: rectangular grids (no B=C possible since B is 3+ and C is 4+)
-    for idx, a in enumerate(gar1_A):
-        ncols_g = len(gar1_C)
-        ax = fig.add_subplot(gs[6, col:col+ncols_g])
+    # --- Row 5: All Garnets ---
+    x = LMARGIN
+    # Cat 1
+    for a in gar1_A:
         data = [[status("Garnet", make_formula_garnet(a, b, c))
                  for c in gar1_C] for b in gar1_B]
+        nr, nc = len(gar1_B), len(gar1_C)
+        ax = make_ax(fig, x, row_tops[5], nr, nc, fig_w, fig_h)
         draw_grid(ax, gar1_B, gar1_C, data,
                   f"Garnet  {a}$_3$B$_2$C$_3$O$_{{12}}$\n(A$^{{2+}}$, B$^{{3+}}$, C$^{{4+}}$)",
                   "B site", "C site")
-        col += ncols_g + 1
+        x += nc * CELL + HGAP_GAR
 
-    # Cat 2: rectangular grid, B (oct) x C (tet), gray out B=C
-    # Not symmetric: octahedral and tetrahedral are different sites
-    # C-site restricted to Al, Ga (Sc/In too large for tetrahedral)
-    for idx, a in enumerate(gar2_A):
-        ncols_g = len(gar2_C)
-        ax = fig.add_subplot(gs[6, col:col+ncols_g])
+    # Cat 2
+    for a in gar2_A:
         data = []
         for b in gar2_B:
             row = []
             for c in gar2_C:
                 if b == c:
-                    row.append(-2)  # invisible B=C cell (like DP Cat 4)
+                    row.append(-2)
                 else:
                     row.append(status("Garnet", make_formula_garnet(a, b, c)))
             data.append(row)
+        nr, nc = len(gar2_B), len(gar2_C)
+        ax = make_ax(fig, x, row_tops[5], nr, nc, fig_w, fig_h)
         draw_grid(ax, gar2_B, gar2_C, data,
                   f"Garnet  {a}$_3$B$_2$C$_3$O$_{{12}}$\n(A$^{{3+}}$, B$^{{3+}}$, C$^{{3+}}$)",
                   "B (oct.)", "C (tet.)")
-        col += ncols_g + 1
+        x += nc * CELL + HGAP_GAR
 
     plt.savefig(base + "literature_search_results.png", dpi=200, bbox_inches='tight')
     plt.savefig(base + "literature_search_results.pdf", bbox_inches='tight')
