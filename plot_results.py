@@ -25,6 +25,7 @@ CAT_COLORS = {
     2: "#c5e17a",   # yellow-green (not found, feasible)
     3: "#fdd835",   # yellow (non-SS / high-pressure only)
     5: "#4db6ac",   # teal (disordered solid solution)
+    4: "#ff9f43",   # orange (marginal / uncertain)
     7: "#ff9f43",   # orange (prefers different phase) — not used in current plot
     6: "#e53935",   # red (not physically possible)
 }
@@ -49,6 +50,13 @@ def parse_not_found(path):
             formula = row["Material Formula"].strip()
             notes = row["Notes"].strip()
             nl = notes.lower()
+
+            # =================================================================
+            # Category 4: Marginal / uncertain
+            # =================================================================
+            if nl.startswith("[marginal]"):
+                results[key] = 4
+                continue
 
             # =================================================================
             # Category 6: Not physically possible
@@ -452,10 +460,10 @@ def main():
                        label='Non-SS / high-pressure only'),
         mpatches.Patch(facecolor=CAT_COLORS[5], edgecolor='black', linewidth=1.2,
                        label='Disordered solid solution'),
+        mpatches.Patch(facecolor=CAT_COLORS[4], edgecolor='black', linewidth=1.2,
+                       label='Marginal / uncertain'),
         mpatches.Patch(facecolor=CAT_COLORS[6], edgecolor='black', linewidth=1.2,
                        label='Not physically possible'),
-        mpatches.Patch(facecolor=CAT_COLORS[0], edgecolor='black', linewidth=1.2,
-                       label='In queue'),
     ]
     fig.legend(handles=legend_patches, loc='upper center', ncol=3,
               fontsize=18, frameon=True, fancybox=True, shadow=True,
