@@ -82,8 +82,8 @@ Work through `disorder_measurement_queue.csv` **one composition at a time — no
 5. Repeat
 
 ### What counts as a disorder measurement
-- **Yes**: Rietveld refinement reporting site occupancies or order parameter S; NMR measuring local cation environments; superstructure reflection intensities quantifying long-range order; DFT-calculated antisite formation energies
-- **No**: Papers that merely state "ordered" or "disordered" without quantification; papers that only report the crystal structure without disorder analysis; papers that study doped compositions where the dopant itself is the disordering agent
+- **Yes**: Rietveld refinement reporting site occupancies or order parameter S; NMR measuring local cation environments; superstructure reflection intensities quantifying long-range order; EXAFS/PDF analysis of local cation distribution; ion irradiation studies with quantified disorder thresholds
+- **No**: DFT-calculated or computationally predicted disorder parameters (this database is experimental only); papers that merely state "ordered" or "disordered" without quantification; papers that only report the crystal structure without disorder analysis; papers that study doped compositions where the dopant itself is the disordering agent
 
 ---
 
