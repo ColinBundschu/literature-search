@@ -63,3 +63,27 @@ Double Perovskite,Pb2ScSbO6,S~1 (fully ordered),"Neutron powder diffraction, Rie
 Double Perovskite,Pb2YSbO6,S~1 (fully ordered),"Neutron + synchrotron XRD, Rietveld",inaccessible,Barreno et al. J. Solid State Chem. 2014; C2/c monoclinic at RT; Y/Sb fully ordered
 Double Perovskite,Pb2LuNbO6,Pronounced long-range order (high S),XRD superlattice reflections + TEM,10.1039/C6RA26171J,Hu et al. RSC Advances 2017; antiferroelectric; two sets of superlattice reflections confirmed
 Double Perovskite,Pb2MgWO6,S~1; chemical antiphase boundaries present in ordered matrix,Electron ptychography,10.1021/acsnano.4c14833,Smeaton et al. ACS Nano 2025; APBs are planar defects in otherwise highly ordered structure
+Double Perovskite,Sr2AlNbO6,S=0.4-0.9 (T-dependent; kinetically controlled),XRD + neutron Rietveld,10.1557/JMR.1994.2118,Barnes & Woodward J. Mater. Res. 1994; ordering increases with annealing T up to 1690°C; P21/n
+Double Perovskite,Sr2AlTaO6,S increases monotonically with T (up to 1690°C),XRD + neutron Rietveld,10.1557/JMR.1994.2118,Barnes & Woodward 1994; Fm-3m when ordered; kinetically controlled
+Double Perovskite,Sr2AlSbO6,Fully or partially ordered (synthesis-dependent); antiphase domains,XRD Rietveld + Raman,10.1016/j.jssc.2008.01.030,J. Solid State Chem. 2008; Fm-3m a=5.6058(1) Å; Sb5+ drives ordering
+Double Perovskite,Ba2YNbO6,S~1 (fully ordered; cubic aristotype Fm-3m),Neutron + XRD Rietveld,10.1107/S0108768106002448,"Barnes, Lufaso & Woodward, Acta Cryst. B 2006; Y3+/Nb5+ Δr=0.26 Å drives complete ordering"
+Double Perovskite,Sr2ScNbO6,Fully ordered (P21/n),Neutron + XRD Rietveld,10.1107/S0108768106002448,Barnes et al. 2006; no antisite disorder reported
+Double Perovskite,Ca2AlNbO6,Fully ordered (P21/n),Neutron + XRD Rietveld,10.1107/S0108768106002448,Barnes et al. 2006
+Double Perovskite,Sr2GaTaO6,Fully ordered (I4/m tetragonal),Neutron + XRD Rietveld,10.1107/S0108768106002448,Barnes et al. 2006
+Double Perovskite,Ba2ScTaO6,LRO=51%; Ta site contains 75% Ta + 25% Sc,Luminescence spectroscopy (Mn4+ probe) + XRD,10.1021/acs.jpclett.4c00205,J. Phys. Chem. Lett. 2024; low ordering due to similar Sc3+/Ta5+ ionic radii (Δr~0.1 Å)
+Double Perovskite,Ba2YTaO6,LRO~100%,Synchrotron XRD + Raman,10.1021/acs.jpclett.4c00205,J. Phys. Chem. Lett. 2024; Fm-3m → I4/m below ~260 K when well-ordered
+Double Perovskite,Ba2InTaO6,~74% ordering (annealed 1130°C),XRD Rietveld,10.1016/j.jssc.2011.01.024,Ordering kinetically difficult; In3+/Ta5+ Δr=0.16 Å modest
+Double Perovskite,Ca2InSbO6,89% ordered (11% antisite defects); P21/n,XRD Rietveld,inaccessible,"Crystal structure of A2InSbO6 (A=Ca,Sr,Ba); a=5.5273, b=5.6937, c=7.9049 Å"
+Double Perovskite,Sr2InSbO6,92% ordered (8% antisite defects); P21/n,XRD Rietveld,inaccessible,"Same paper; a=5.7327, b=5.7271, c=8.0979 Å"
+Double Perovskite,Ba2InSbO6,89% ordered (11% antisite defects); Fm-3m,XRD Rietveld,inaccessible,Same paper; a=8.2938(1) Å
+Double Perovskite,Sr2ScSbO6,Fully ordered throughout all phases; P21/n→I2/m→I4/m→Fm-3m,XRD + neutron Rietveld,10.1016/j.jssc.2012.06.015,J. Solid State Chem. 2012; Sc/Sb ordering confirmed in all polymorphs
+Double Perovskite,Ca2ScSbO6,Fully ordered; P21/n→I2/m (~1440 K),XRD + neutron Rietveld,10.1016/j.jssc.2012.06.015,Same paper; very large octahedral distortion
+Double Perovskite,Sr2YNbO6,Fully ordered (P21/n),Neutron + XRD Rietveld,10.1107/S0108768105012395,Howard et al. Acta Cryst. B 2005; corrected earlier triclinic report
+Double Perovskite,Sr2YTaO6,Fully ordered (P21/n),Neutron + XRD Rietveld,10.1107/S0108768105012395,Howard et al. 2005
+Double Perovskite,Sr2InTaO6,Ordered (P21/n); transitions to I2/m→I4/m→Fm-3m,Neutron + synchrotron XRD Rietveld,10.1007/s00269-012-0545-5,Phys. Chem. Minerals 2012; rock-salt In/Ta ordering confirmed
+Double Perovskite,Ba2LuNbO6,Fully ordered (Fm-3m cubic),Neutron + synchrotron XRD Rietveld,10.1016/j.jssc.2006.10.035,"Saines, Kennedy & Elcombe, J. Solid State Chem. 2007; 28-member Ba2LnNbO6/SbO6 study"
+Double Perovskite,Ba2LuTaO6,Fully ordered (Fm-3m),XRD Rietveld,inaccessible,"Doi & Hinatsu, J. Solid State Chem.; all Ba2LnTaO6 (Ln=Y,Dy-Lu) cubic and ordered"
+Double Perovskite,Sr2LuNbO6,Fully ordered (P21/n),Synchrotron XRD Rietveld,inaccessible,Powder Diffraction 2018; Sr2RNbO6 (R=Sm-Lu) series all ordered monoclinic
+Double Perovskite,Sr2GaSbO6,Fully ordered (I4/m tetragonal),XRD + neutron Rietveld,inaccessible,"Ga3+/Sb5+ ordering robust; a=5.54, c=7.90 Å"
+Double Perovskite,Ba2LuBiO6,Ordered (Fm-3m); rock-salt Lu/Bi ordering,XRD,10.1021/cm0486924,Harrison et al. Chem. Mater. 2005; Ba2-xSrxLuBiO6 series
+Double Perovskite,Sr2ScBiO6,Ordered (P21/n); rock-salt Sc/Bi ordering,XRD,inaccessible,"Karunadasa et al.; monoclinic a~b~5.785, c~8.182 Å"
