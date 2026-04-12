@@ -34,3 +34,32 @@ Pyrochlore,Bi2Sn2O7,Three polymorphs (alpha/beta/gamma); gamma=ideal cubic pyroc
 Pyrochlore,La2Ce2O7,Defect fluorite (Fm-3m); La3+/Ce4+ share sites randomly,"Neutron + synchrotron XRD, Raman",10.1103/PhysRevB.85.132101,"Reynolds & Kennedy, Phys. Rev. B 2012; no pyrochlore superstructure peaks"
 Pyrochlore,La2Ce2O7,Local C-type (bixbyite) ordering within globally disordered fluorite,Neutron total scattering + ab initio MD,10.1039/C6CP04708D,Norberg et al. Phys. Chem. Chem. Phys. 2016; vacancy ordering along <111> and <210>
 Pyrochlore,Pb2Sb2O7,Intrinsically unstable pyrochlore; requires dopant stabilization,"Synchrotron XRD, Rietveld, EXAFS",10.1021/acs.chemmater.9b04821,Vanmeert et al. Chem. Mater. 2020; pure Pb2Sb2O7 decomposes; Na stabilizes cubic form
+Double Perovskite,Ba2MgWO6,S=1 (fully ordered; no detectable antisite mixing),"Single-crystal XRD + neutron powder diffraction, Rietveld",10.1016/j.jssc.2011.06.015,Bugaris et al. J. Solid State Chem. 2011; Fm-3m; confirmed by both single-crystal and powder neutron
+Double Perovskite,Ba2ZnWO6,S=1 (fully ordered; no detectable antisite mixing),"Single-crystal XRD + neutron powder diffraction, Rietveld",10.1016/j.jssc.2011.06.015,Bugaris et al. 2011; same study; M2+ and W6+ fully ordered
+Double Perovskite,Sr2MgMoO6,Nearly perfect ordering (as-synthesized); disorder increases upon reduction,"Combined XRD + neutron powder diffraction, Rietveld",inaccessible,Bernuy-Lopez et al. Chem. Mater. 2007; I-1 triclinic; reduction above 900°C correlates with antisite disorder
+Double Perovskite,Ca2MgWO6,Fully ordered (Mg and W on alternate B sites),Simultaneous neutron + XRD Rietveld,10.1107/S0108270103011934,Acta Cryst. C 2003; P21/n; large charge difference ensures complete ordering
+Double Perovskite,Sr2MgWO6,Fully ordered (no significant deviation from stoichiometric occupancies),"Powder neutron diffraction, Rietveld",inaccessible,"Gateshki & Igartua, J. Phys.: Condens. Matter 2004; I4/m"
+Double Perovskite,Ba2CaWO6,Fully ordered,"XRD + neutron powder diffraction, Rietveld",10.1016/j.jssc.2011.08.035,Lufaso et al. J. Solid State Chem. 2011; systematic study of 6 ordered W/Mo perovskites
+Double Perovskite,Ba2CaMoO6,Fully ordered,"XRD + neutron powder diffraction, Rietveld",10.1016/j.jssc.2011.08.035,Lufaso et al. 2011; Fm-3m cubic
+Double Perovskite,Sr2ZnWO6,Fully ordered,"XRD + neutron powder diffraction, Rietveld",10.1016/j.jssc.2011.08.035,Lufaso et al. 2011; P21/n monoclinic; t=0.976
+Double Perovskite,Sr2ZnMoO6,Fully ordered,"XRD + neutron powder diffraction, Rietveld",10.1016/j.jssc.2011.08.035,Lufaso et al. 2011; I4/m tetragonal; t=0.979
+Double Perovskite,Ca2CaWO6,Fully ordered,"XRD + neutron powder diffraction, Rietveld",10.1016/j.jssc.2011.08.035,"Lufaso et al. 2011; P21/n; Ca on both A and B' sites, W on B''"
+Double Perovskite,Sr2MgTeO6,Fully ordered (B-site cations ordered in all compositions),XRD Rietveld,10.1021/cm100486r,Babu et al. Chem. Mater. 2010; I4/m; (Sr2-xCax)MgTeO6 series
+Double Perovskite,Ca2MgTeO6,Fully ordered,XRD Rietveld,10.1021/cm100486r,"Babu et al. 2010; P21/n; end member of (Sr,Ca)2MgTeO6 series"
+Double Perovskite,Ba2CaTeO6,Fully ordered,"XRD + neutron powder diffraction, Rietveld",10.1016/j.jssc.2008.06.024,Fu et al. J. Solid State Chem. 2008; Fm-3m; highest symmetry (elpasolite)
+Double Perovskite,Sr2CaWO6,Fully ordered,XRD Rietveld,inaccessible,Gateshki & Igartua 2004; P21/n
+Double Perovskite,Sr2CaTeO6,Ordered (monoclinic P21/n),XRD Rietveld,inaccessible,J. Electroceramics 2021; phase transitions studied across Sr2(Sr1-xCax)TeO6
+Double Perovskite,Pb2MgWO6,Fully ordered,Neutron diffraction + XRD + electron diffraction,inaccessible,Pnma (orthorhombic antiferroelectric at RT); Fm-3m above 313 K; complete B-site ordering of Mg2+ and W6+
+Double Perovskite,Pb2CaTeO6,Ordered (P21/c at RT),XRD,10.1016/j.jssc.2019.04.015,Bock & Mueller-Buschbaum 2019; transitions to cubic at ~225°C
+Double Perovskite,Sr2ZnTeO6,Ordered (I2/m monoclinic),XRD Rietveld,inaccessible,Phase transitions: I2/m → I4/m at ~120°C → Fm-3m at ~270°C; Dias et al.
+Double Perovskite,Pb2ScTaO6,Omega=0.98 (annealed 1000°C/30h),XRD (I_111/I_200 ratio),10.1038/s41467-021-23354-y,Nouchokgwe et al. Nat. Commun. 2021; ordered→ferroelectric at 295 K
+Double Perovskite,Pb2ScTaO6,"S=0.82, coherence ~100 nm",XRD + HRTEM,inaccessible,Hou et al. OSTI 1973393 (2023); MLCC processing
+Double Perovskite,Pb2ScTaO6,Omega=0.55 (as-sintered),XRD superlattice reflections,10.1063/5.0073680,Zhu et al. AIP Advances 2021; solid-state reaction
+Double Perovskite,Pb2ScTaO6,S~0 (quenched from 1250-1500°C),XRD + dielectric + DSC,10.1002/pssa.2210610132,"Stenger & Burggraaf, Phys. Stat. Sol. 1980; disordered = relaxor; foundational study"
+Double Perovskite,Pb2ScNbO6,S=0.9 (annealed ceramic),XRD superlattice reflections,10.1002/pssb.201349259,Bobnar et al. Phys. Stat. Sol. (b) 2013; ordered = non-relaxor ferroelectric
+Double Perovskite,Pb2ScNbO6,S~0 (as-synthesized at high T),XRD,10.1002/pssa.2210610132,Stenger & Burggraaf 1980; disordered = relaxor with Tm~379 K; order-disorder T~1210°C
+Double Perovskite,Pb2InNbO6,Partially ordered (S~0.3-0.4); ordered domains >80 nm,TEM superlattice reflections,10.1007/BF00540513,"Baba-Kishi & Barber, J. Mater. Sci. 1988; notoriously difficult to order; pyrochlore competition"
+Double Perovskite,Pb2ScSbO6,S~1 (fully ordered),"Neutron powder diffraction, Rietveld",10.1039/b821688f,Barreno et al. Dalton Trans. 2009; Fm-3m; alternating ScO6/SbO6; Sb5+ drives complete ordering
+Double Perovskite,Pb2YSbO6,S~1 (fully ordered),"Neutron + synchrotron XRD, Rietveld",inaccessible,Barreno et al. J. Solid State Chem. 2014; C2/c monoclinic at RT; Y/Sb fully ordered
+Double Perovskite,Pb2LuNbO6,Pronounced long-range order (high S),XRD superlattice reflections + TEM,10.1039/C6RA26171J,Hu et al. RSC Advances 2017; antiferroelectric; two sets of superlattice reflections confirmed
+Double Perovskite,Pb2MgWO6,S~1; chemical antiphase boundaries present in ordered matrix,Electron ptychography,10.1021/acsnano.4c14833,Smeaton et al. ACS Nano 2025; APBs are planar defects in otherwise highly ordered structure
