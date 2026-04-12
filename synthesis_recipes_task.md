@@ -8,6 +8,7 @@
 | `synthesis_recipes_queue.csv` | Remaining compositions to search (Material Class, Formula) |
 | `disorder_measurements.csv` | Cation disorder measurements (Material Class, Formula, Disorder Parameter, Measurement Method, DOI, Notes) |
 | `disorder_measurement_queue.csv` | Remaining compositions to search for disorder data (Material Class, Formula) |
+| `disorder_comparison.csv` | Reorganized disorder data for comparison with Wang-Landau calculations (see schema below) |
 
 ## CSV Schema — synthesis_recipes.csv
 1. **Material Class** — Spinel / Double Perovskite / Ilmenite / Pyrochlore / Garnet
@@ -80,6 +81,23 @@ Work through `disorder_measurement_queue.csv` **one composition at a time — no
 3. If found → add row(s) to `disorder_measurements.csv` — **each paper gets its own row**; if not found → simply remove from queue (no "not found" CSV needed for this search)
 4. Remove the composition from the queue
 5. Repeat
+
+### CSV Schema — disorder_comparison.csv (WL comparison format)
+1. **Material Formula**
+2. **Structure Type** — Spinel / Double Perovskite / Ilmenite / Pyrochlore / Garnet
+3. **Antisite Fraction** — normalized disorder metric (0 = fully ordered, 0.5 = fully random):
+   - Spinels: inversion parameter x directly (x=0 normal, x=1 fully inverse → capped at 0.5 for comparison)
+   - Double perovskites: x = (1-S)/2 where S is the order parameter
+   - Pyrochlores: antisite fraction on cation sites
+   - Garnets: fraction of "wrong" cation on each site
+4. **Equilibrium T (°C)** — temperature at which the disorder was established (annealing/quench T for quenched samples, measurement T for in-situ); use `inaccessible` if not reported
+5. **Measurement T (°C)** — temperature at which diffraction/NMR was performed (usually 25 for quenched samples)
+6. **In Situ** — TRUE if measured at the equilibrium temperature; FALSE if quenched then measured at RT
+7. **Method** — experimental technique
+8. **DOI**
+9. **Notes**
+
+The key distinction for WL comparison: **Equilibrium T** is what your WL calculation predicts x(T) at. A quenched sample measured at RT reflects x(T_quench), not x(RT).
 
 ### What counts as a disorder measurement
 - **Yes**: Rietveld refinement reporting site occupancies or order parameter S; NMR measuring local cation environments; superstructure reflection intensities quantifying long-range order; EXAFS/PDF analysis of local cation distribution; ion irradiation studies with quantified disorder thresholds
