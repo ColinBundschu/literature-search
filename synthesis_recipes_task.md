@@ -6,6 +6,8 @@
 | `synthesis_recipes.csv` | Found recipes (Material Class, Formula, Sintering Temp (C), Heating Time, Precursors, DOI, Notes) |
 | `synthesis_recipes_not_found.csv` | Compositions with no recipe found (Material Class, Formula, Notes) |
 | `synthesis_recipes_queue.csv` | Remaining compositions to search (Material Class, Formula) |
+| `disorder_measurements.csv` | Cation disorder measurements (Material Class, Formula, Disorder Parameter, Measurement Method, DOI, Notes) |
+| `disorder_measurement_queue.csv` | Remaining compositions to search for disorder data (Material Class, Formula) |
 
 ## CSV Schema — synthesis_recipes.csv
 1. **Material Class** — Spinel / Double Perovskite / Ilmenite / Pyrochlore / Garnet
@@ -50,6 +52,38 @@ Every entry added to `synthesis_recipes_not_found.csv` **must** be rigorously as
 The Notes field should include enough reasoning and citations that the classification can be independently verified.
 
 For double perovskites, search both B'-B'' orderings (e.g. Sr2AlTaO6 and Sr2TaAlO6) — record under one consistent format.
+
+---
+
+## Cation Disorder Measurement Search
+
+### Goal
+For every composition known to exist (by any synthesis method), find all papers that have quantitatively measured the degree of cation disorder on the swappable sites. This includes compounds in `synthesis_recipes.csv` (solid-state found) as well as those in `synthesis_recipes_not_found.csv` classified as non-SS/HP (cat 3) or disordered solid solution (cat 5).
+
+### CSV Schema — disorder_measurements.csv
+1. **Material Class** — Spinel / Double Perovskite / Ilmenite / Pyrochlore / Garnet
+2. **Material Formula**
+3. **Disorder Parameter** — quantitative measure of cation disorder, e.g.:
+   - For double perovskites: B-site order parameter S (0 = fully disordered, 1 = fully ordered), or % antisite defects
+   - For spinels: inversion parameter x (0 = normal, 1 = fully inverse)
+   - For pyrochlores: fraction of antisite defects or x in (A1-xBx)2(B1-xAx)2O7
+   - For garnets: site occupancy fractions from Rietveld refinement
+   - Use `inaccessible` if paywalled, `missing` if absent in a fully-read paper
+4. **Measurement Method** — e.g., "Rietveld refinement (XRD)", "Rietveld refinement (neutron)", "NMR", "EXAFS", "Mössbauer", "EELS", "TEM diffraction (superstructure reflections)", "DFT (calculated)"
+5. **DOI** — no URL prefix
+6. **Notes** — synthesis conditions that produced this disorder level, annealing history, temperature of measurement, any relevant context
+
+### Search Workflow
+Work through `disorder_measurement_queue.csv` **one composition at a time — no batching**:
+1. Take the next composition from the top of the queue
+2. Search for papers that quantitatively measure cation disorder (order parameter, site occupancies, antisite defect concentrations)
+3. If found → add row(s) to `disorder_measurements.csv` — **each paper gets its own row**; if not found → simply remove from queue (no "not found" CSV needed for this search)
+4. Remove the composition from the queue
+5. Repeat
+
+### What counts as a disorder measurement
+- **Yes**: Rietveld refinement reporting site occupancies or order parameter S; NMR measuring local cation environments; superstructure reflection intensities quantifying long-range order; DFT-calculated antisite formation energies
+- **No**: Papers that merely state "ordered" or "disordered" without quantification; papers that only report the crystal structure without disorder analysis; papers that study doped compositions where the dopant itself is the disordering agent
 
 ---
 
