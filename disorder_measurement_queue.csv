@@ -164,13 +164,6 @@ Garnet,Y3Al2Ga3O12
 Garnet,Y3In2Ga3O12
 Garnet,Y3Sc2Al3O12
 Garnet,Y3Sc2Ga3O12
-Ilmenite,MgGeO3
-Ilmenite,MgSiO3
-Ilmenite,MgTiO3
-Ilmenite,ZnGeO3
-Ilmenite,ZnSiO3
-Ilmenite,ZnSnO3
-Ilmenite,ZnTiO3
 Pyrochlore,Bi2Ce2O7
 Pyrochlore,Bi2Hf2O7
 Pyrochlore,Bi2Sn2O7
@@ -194,9 +187,3 @@ Pyrochlore,Y2Hf2O7
 Pyrochlore,Y2Sn2O7
 Pyrochlore,Y2Ti2O7
 Pyrochlore,Y2Zr2O7
-Spinel,MgAl2O4
-Spinel,MgGa2O4
-Spinel,MgIn2O4
-Spinel,ZnAl2O4
-Spinel,ZnGa2O4
-Spinel,ZnIn2O4

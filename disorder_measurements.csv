@@ -1,1 +1,28 @@
 Material Class,Material Formula,Disorder Parameter,Measurement Method,DOI,Notes
+Spinel,MgAl2O4,x=0.05 (RT) to x=0.35 (1600°C),"In situ neutron powder diffraction, Rietveld",10.2138/am-1999-0313,"Redfern et al. Am. Mineral. 1999; in situ TOF neutron under vacuum to 1600°C; O'Neill-Navrotsky model: alpha=32.5 kJ/mol, beta=-17 kJ/mol"
+Spinel,MgAl2O4,"x=0.05 (RT, synthetic) to x=0.29 (1260°C)","Neutron powder diffraction (TOF), Rietveld",inaccessible,"Peterson, Lager & Hitterman, Am. Mineral. 76, 1455-1458 (1991); synthetic MgAl2O4 heated in situ"
+Spinel,MgAl2O4,"x~0.40 at 1600 K, 3.2 GPa",In situ neutron diffraction under pressure,10.2138/am-2004-0708,Meducin et al. Am. Mineral. 2004; pressure promotes inversion; alpha=31(6) kJ/mol
+Spinel,MgAl2O4,Antisite pair energy = 0.73 eV,DFT + atomistic simulation,10.1016/j.solidstatesciences.2007.04.005,Ball et al. Solid State Sci. 2008; antisite defects are lowest-energy intrinsic process; normal ground state
+Spinel,MgAl2O4,x=0.19 (1200°C) to x=0.13 (1500°C),"Neutron powder diffraction, Rietveld",10.3390/ma15186422,Corlett et al. Materials 2022; mechanical activation vs conventional synthesis
+Spinel,MgGa2O4,x=0.88(3),"Neutron powder diffraction, Rietveld",inaccessible,"Millard & Peterson, Phys. Chem. Minerals; end-member of MgGa2O4-Mg2GeO4 study; largely inverse"
+Spinel,MgGa2O4,x~0.82 (Ga on tet),"Single-crystal XRD, electron density",10.1016/0025-5408(96)00009-8,"Sawada, Mater. Res. Bull. 1996; anharmonic thermal parameter refinement; tet site Mg0.183Ga0.817"
+Spinel,MgGa2O4,Inverse ground state,DFT,10.1111/j.1151-2916.1999.tb02241.x,"Sickafus, Wills & Grimes, J. Am. Ceram. Soc. 1999; seminal review; DFT predicts inverse ground state"
+Spinel,MgIn2O4,x=1.0 (fully inverse),XRD,10.1111/j.1151-2916.1967.tb15002.x,"Datta & Roy, J. Am. Ceram. Soc. 1967; systematic study of equilibrium order-disorder in spinels"
+Spinel,MgIn2O4,Fully inverse ground state,DFT,10.1111/j.1151-2916.1999.tb02241.x,"Sickafus, Wills & Grimes 1999; large In3+ ionic radius drives octahedral preference of Mg2+"
+Spinel,MgIn2O4,Inverse→random (He irrad); inverse→rocksalt (Ne irrad),XRD (post-irradiation),10.1016/j.scriptamat.2016.07.009,Jiang et al. Scr. Mater. 2016; 400 keV Ne (4 dpa)→rocksalt; 200 keV He (5 dpa)→random spinel (x~2/3)
+Spinel,ZnAl2O4,x=0.01 (900°C) to x=0.05 (1300°C),"Powder XRD, Rietveld",10.1007/BF00211850,"O'Neill & Dollase, Phys. Chem. Minerals 1994; quenched samples 900-1400°C; alpha(Zn-Al)=89 kJ/mol; very strongly normal"
+Spinel,ZnAl2O4,x=0.34 (nanoparticles ~10 nm),XRD Rietveld + PDF + EXAFS + 27Al NMR,inaccessible,"Schrader et al. Dalton Trans. 49, 16037 (2020); elevated inversion in nanoparticles is surface/interface driven"
+Spinel,ZnAl2O4,Ion-irradiation-induced disorder,27Al solid-state NMR,10.1021/jp072620t,Pellerin et al. J. Phys. Chem. B 2007; swift heavy ion irradiation induces cation disorder; NMR quantifies Al on tet sites
+Spinel,ZnGa2O4,x~0 (bulk) to x~0.36 (nanoplates),XRD Rietveld; XPS,inaccessible,ACS Appl. Nano Mater. 2024; highly inverted nanoplates showed i=0.36(4); inversion enhanced luminescence
+Spinel,ZnGa2O4,Normal spinel; moderate site preference,Point-ion electrostatic model + DFT,10.1021/ja2034602,"Stevanovic, d'Avezac & Zunger, JACS 2011; universal electrostatic model; ZnGa2O4 normal but smaller driving force than ZnAl2O4"
+Spinel,ZnIn2O4,Predicted normal (~0),DFT (FP-LAPW),inaccessible,"Zerarga et al. Comput. Mater. Sci. 53, 169 (2012); normal spinel assumed; a=8.99 Å (calc); bandgap ~2.8 eV"
+Spinel,ZnIn2O4,Normal spinel predicted,Point-ion electrostatic model,10.1021/ja2034602,Stevanovic et al. JACS 2011; Zn2+ strong tet preference + In3+ oct preference → normal
+Ilmenite,MgTiO3,Antisite E_f = 0.42 eV/defect,Classical pair-potential atomistic simulation,10.1038/s41598-019-40878-y,Kuganathan et al. Sci. Rep. 2019; antisite is lowest-energy intrinsic defect; no experimental disorder detected
+Ilmenite,MgTiO3,No disorder detected (296-1305 K),"In situ neutron powder diffraction, Rietveld",inaccessible,"Henderson et al. Open Minerals J. 3, 1-11 (2009); structure remains ordered across full T range"
+Ilmenite,MgTiO3,No disorder detected (to 1820 K),High-temperature Raman spectroscopy,10.1007/BF00202274,"Reynard & Guyot, Phys. Chem. Minerals 1994; no phase transition or disorder to melting point"
+Ilmenite,ZnTiO3,Fully ordered Zn-Ti (LiNbO3-type R3c),Synchrotron XRD Rietveld,10.1021/ja408931v,Inaguma et al. JACS 2014; HP polymorph; spontaneous polarization 75-88 μC/cm²; no disorder detected
+Ilmenite,MgSiO3,Completely ordered Mg-Si,Single-crystal XRD,inaccessible,"Horiuchi et al. Am. Min. 67, 788-793 (1982); HP synthesis; large Mg2+/Si4+ size difference strongly favors ordering"
+Ilmenite,MgSiO3,Ordered under compression; Schottky E_f=0.80 eV,Single-crystal XRD + DFT/classical simulation,10.2138/am.2005.1621,Yamanaka et al. Am. Min. 2005 (compression); Kuganathan et al. Compounds 2025 (defect energies)
+Ilmenite,MgGeO3,Fully ordered under compression,Single-crystal XRD under pressure,10.2138/am.2005.1621,Yamanaka et al. Am. Min. 2005; no disorder induced by pressure; no other quantitative studies found
+Ilmenite,ZnGeO3,Completely ordered Zn-Ge,Single-crystal XRD (R=0.020),10.1524/zkri.1990.191.1-2.93,"Ross & Leinenweber, Z. Kristallogr. 1990; synthesized 180 kbar/1500°C; full ordering confirmed"
+Ilmenite,ZnSnO3,Ordered Zn-Sn (R3c LiNbO3-type); no disorder,XRD Rietveld,10.1021/ja801843v,Inaguma et al. JACS 2008; 7 GPa/1000°C; polar structure; similar ionic radii could allow mixing but none detected
