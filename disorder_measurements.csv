@@ -87,3 +87,10 @@ Double Perovskite,Sr2LuNbO6,Fully ordered (P21/n),Synchrotron XRD Rietveld,inacc
 Double Perovskite,Sr2GaSbO6,Fully ordered (I4/m tetragonal),XRD + neutron Rietveld,inaccessible,"Ga3+/Sb5+ ordering robust; a=5.54, c=7.90 Å"
 Double Perovskite,Ba2LuBiO6,Ordered (Fm-3m); rock-salt Lu/Bi ordering,XRD,10.1021/cm0486924,Harrison et al. Chem. Mater. 2005; Ba2-xSrxLuBiO6 series
 Double Perovskite,Sr2ScBiO6,Ordered (P21/n); rock-salt Sc/Bi ordering,XRD,inaccessible,"Karunadasa et al.; monoclinic a~b~5.785, c~8.182 Å"
+Double Perovskite,La2MgTiO6,~4% antisite disorder (Mg/Ti mixing),XRD Rietveld,10.1016/j.mseb.2005.02.024,Davies group; P21/n; highly ordered; disordered variant adopts Pbnm; becomes fully disordered with >10% SrTiO3 substitution
+Double Perovskite,La2ZnTiO6,~10% antisite Zn/Ti disorder,Neutron powder diffraction Rietveld,inaccessible,"Alonso, Martinez-Lope, Fernandez-Diaz (CSIC Madrid); P21/n; NPD essential to distinguish Zn/Ti; air-annealed sample"
+Double Perovskite,La2MgGeO6,Ordered (Mg/Ge on distinct sites); R-3 space group,XRD + neutron Rietveld,10.1039/b205274c,"Woodward, Chem. Commun. 2002; first Ge perovskite at ambient pressure; hexagonal setting; Mg2+/Ge4+ ordered"
+Garnet,Y3Al2Ga3O12,"72% Ga on tet (C) site, 28% Ga on oct (B) site",Single-crystal 71Ga and 27Al NMR,10.1021/acs.jpcc.6b08593,Laguta et al. J. Phys. Chem. C 2016; definitive study; Ga prefers tet due to covalency of Ga-O bond
+Garnet,Lu3Al2Ga3O12,Similar Ga tet preference as YAGG; composition-dependent,27Al and 71Ga MAS NMR + DFT,10.1016/j.jpcs.2018.10.012,Laguta et al. J. Phys. Chem. Solids 2019; Ga prefers tet across all compositions; DFT: Ga 3d10 involvement
+Garnet,Ca3Al2Ga3O12,Oct: Ga0.543Al0.457; Tet: Ga0.721Al0.279,Single-crystal XRD,10.1016/j.jcrysgro.2023.127380,Precise formula Gd3(Ga0.543Al0.457)2(Ga0.721Al0.279)3O12; important scintillator; 2023
+Garnet,Y3Sc2Al3O12,Sc primarily oct; up to 17% Sc on dodecahedral (A) site; Sc solubility limit ~97.5% on oct,XRD Rietveld,10.1111/jace.16294,Tarala et al. J. Am. Ceram. Soc. 2019; Sc distributes between dodecahedral and oct sites; no Sc on tet
