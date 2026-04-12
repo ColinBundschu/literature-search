@@ -6,9 +6,8 @@
 | `synthesis_recipes.csv` | Found recipes (Material Class, Formula, Sintering Temp (C), Heating Time, Precursors, DOI, Notes) |
 | `synthesis_recipes_not_found.csv` | Compositions with no recipe found (Material Class, Formula, Notes) |
 | `synthesis_recipes_queue.csv` | Remaining compositions to search (Material Class, Formula) |
-| `disorder_measurements.csv` | Cation disorder measurements (Material Class, Formula, Disorder Parameter, Measurement Method, DOI, Notes) |
+| `disorder_comparison.csv` | Experimental cation disorder data organized for comparison with Wang-Landau calculations (see schema below) |
 | `disorder_measurement_queue.csv` | Remaining compositions to search for disorder data (Material Class, Formula) |
-| `disorder_comparison.csv` | Reorganized disorder data for comparison with Wang-Landau calculations (see schema below) |
 
 ## CSV Schema — synthesis_recipes.csv
 1. **Material Class** — Spinel / Double Perovskite / Ilmenite / Pyrochlore / Garnet
